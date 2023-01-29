@@ -2,7 +2,7 @@ import requests
 import json
 import Airport_database
 def airportinfo(code):
-    consumer_key = "FKkkVIgmjbAZDhRKIdgEyBb3cd9XaI3R"
+    """consumer_key = "FKkkVIgmjbAZDhRKIdgEyBb3cd9XaI3R"
     consumer_secret = "AzWpPCrnJP3Jgfgk"
     payload = {
     'grant_type': 'client_credentials',
@@ -19,13 +19,14 @@ def airportinfo(code):
     response = requests.get(f'https://test.api.amadeus.com/v1/reference-data/locations?subType=AIRPORT&keyword={code}', headers={'Authorization': str('Bearer '+rlist['access_token'])})
     if json.loads(response.text)['meta']['count']==0:
         print('no result')
-        return
+        return"""
     """outfile = open(f"airport {code}.json", "w")
     json.dump(json.loads(response.text), outfile, sort_keys=True, indent=4)
     outfile.close()"""
     db = Airport_database.import_database()
     long = db.get(code).long
     lat = db.get(code).lat
+    city = db.get(code).city
     #long = (json.loads(response.text)['data'][0]['geoCode']['longitude'])
     #lat = (json.loads(response.text)['data'][0]['geoCode']['latitude'])
-    return long,lat
+    return long,lat,city

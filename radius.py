@@ -3,7 +3,7 @@ import json
 from airportfinder import airportinfo
 def radius(airport,type,rad):
     try:
-        log,lat = airportinfo(airport)
+        log,lat,city = airportinfo(airport)
     except:
         print('no result')
         return
@@ -15,5 +15,5 @@ def radius(airport,type,rad):
     """outfile = open(f"{type} within {rad} meters radius of {airport}.json", "w")
     json.dump(json.loads(response.text), outfile, sort_keys=True, indent=4)
     outfile.close()"""
-    return len(json.loads(response.text)['features']),json.loads(response.text)['features']
+    return len(json.loads(response.text)['features']),json.loads(response.text)['features'],city
 radius('IAH','amusement_parks',400000)

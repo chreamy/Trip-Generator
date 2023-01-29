@@ -8,6 +8,7 @@ things to consider:
 6. download images from site name and include in html
 7. exclude duplicate sites?
 8. convert keywords into location keywords
+9. onlt AA airplanes?
 
 """
 
@@ -15,33 +16,32 @@ from radius import radius
 import pprint
 from exscraper import ticket
 import json
-codes = {'ATL','LAX','ORD'}
-#codes = {'ATL','LAX','ORD','DFW','DEN','JFK','SFO','SEA','MCO','LAS','CLT','EWR','PHX','IAH','MIA','BOS','MSP','DTW','PHL','BWI','SLC','SAN','IAD','DCA','TPA','MDW'}
-miles = 25
-milestometers = 1609.34
-rad = miles* milestometers
-#initial input
-type = 'war_memorials'
-loc = 'IAH'
-date = '2023-02-25'
+def getplaces(miles,type,loc,date):
+    keyword = type.replace(" ", "_").lower()
+    codes = {'ATL','LAX','ORD','DFW','DEN'}
+    #codes = {'ATL','LAX','ORD','DFW','DEN','JFK','SFO','SEA','MCO','LAS','CLT','EWR','PHX','IAH','MIA','BOS','MSP','DTW','PHL','BWI','SLC','SAN','IAD','DCA','TPA','MDW'}
+    milestometers = 1609.34
+    rad = miles* milestometers
+        #initial input
 
-max = []
-apt,placeslist = '',[]
-for code in codes:
-    try:
-        count, places = radius(code,type,rad)
-    except:
-        print(code,'invalid')
-        count = -1
-    print(code,'has',count,type,'in',miles,'miles')
-    max.append({'name': code, 'count':count, 'placeslist' : places})
-max = sorted(max, key=lambda x: x['count'],reverse = True)
-outfile = open(f'{max[0]["name"]}_{max[1]["name"]}_{max[2]["name"]}_{type}.json', "w")
-out = []
-for i in range(3):
-    print(f'option{i} {max[i]["name"]} {type}')
-    max[i]['placeslist'] = sorted(max[i]['placeslist'], key=lambda x: x['properties']['rate'], reverse=True)
-    out.append({'city':max[i]["name"],'places':[{'name':place['properties']['name'],'lon':place['geometry']['coordinates'][0],'lat':place['geometry']['coordinates'][1],'dist':place['properties']['dist']} for place in max[i]['placeslist'][:10]]})
-    ticket(loc,max[i]["name"],date)
-json.dump(out, outfile, sort_keys=True, indent=4)
-outfile.close()
+    max = []
+    apt,placeslist = '',[]
+    for code in codes:
+        try:
+            count, places, city = radius(code,keyword,rad)
+        except:
+            print(code,'invalid')
+            count = -1
+            places = []
+        print(code,'has',count,type,'in',miles,'miles')
+        max.append({'name': code, 'city':city, 'count':count, 'placeslist' : places})
+    max = sorted(max, key=lambda x: x['count'],reverse = True)
+    #outfile = open(f'{max[0]["name"]}_{max[1]["name"]}_{max[2]["name"]}_{type}.json', "w")
+    out = []
+
+    print(f'best is {max[0]["name"]}')
+    max[0]['placeslist'] = sorted(max[0]['placeslist'], key=lambda x: x['properties']['rate'], reverse=True)
+    out={'code':max[0]["name"], 'city':max[0]['city'],'tickets':ticket(loc,max[0]["name"],date),'places':[{'name':place['properties']['name'],'lon':place['geometry']['coordinates'][0],'lat':place['geometry']['coordinates'][1],'dist':place['properties']['dist']} for place in max[0]['placeslist'][:10]]}
+    #json.dump(out, outfile, sort_keys=True,indent=4)
+    #outfile.close()
+    return out

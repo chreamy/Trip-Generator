@@ -1,14 +1,23 @@
 import openai
 
-def gen(city, theme, loc1, loc2, loc3):
-  openai.api_key = "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"
+def gen(city, theme, locs):
+  openai.api_key = "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"
+  location = locs[0]
+  for i in range(1,len(locs)):
+    location += ' and ' + locs[i]
   response = openai.Completion.create(
   model="text-davinci-003",
-  prompt=f"write an airline commercial paragraph about a {theme}-themed trip to {city} in the style of a professional and excited salesman with detailed descriptions of {loc1} and {loc2} and {loc3} with elaborated descriptions of new york",
+  prompt=f"write an airline commercial paragraph about a {theme}-themed trip to {city} in the style of a professional and excited salesman with detailed descriptions of {location} with elaborated descriptions of {city}",
   temperature=0,
   max_tokens=625,
   top_p=1,)
-  outfile = open(f"generated description.txt", "w")
-  outfile.write(str(response['choices'][0]['text']))
-  outfile.close
-gen('new york','music','Zebulon Cafe','National Sawdust','Pyramid CLub')
+  return str(response['choices'][0]['text'])
+
+def gentitle(theme):
+  openai.api_key = "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"
+  response = openai.Completion.create(
+  model="text-davinci-003",
+  prompt=f"Generate a title for an airline trip about {theme}",
+  max_tokens=10,
+  top_p=1)
+  return str(response['choices'][0]['text'][1:])

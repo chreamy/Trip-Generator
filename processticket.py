@@ -7,9 +7,10 @@ def process(rawdat):
     dict = x['dictionaries']
     out = []
     for ticket in data:
-        obj = {'id':ticket['id'],'segments':len(ticket['itineraries'][0]['segments']),'itineraries':[],'price':ticket['price']['total']}
-        for i in ticket['itineraries'][0]['segments']:
-           obj['itineraries'].append({
+        try:
+            obj = {'id':ticket['id'],'segments':len(ticket['itineraries'][0]['segments']),'itineraries':[],'price':ticket['price']['total']}
+            for i in ticket['itineraries'][0]['segments']:
+              obj['itineraries'].append({
                'duration':i['duration'][2:],
                'aircraft':dict['aircraft'][i['aircraft']['code']],
                'carrier': dict['carriers'][i['carrierCode']],
@@ -23,5 +24,7 @@ def process(rawdat):
                    i['arrival']['terminal'],
                    i['arrival']['at']]
            })
-        out.append(obj)
+            out.append(obj)
+        except:
+            pass
     return out

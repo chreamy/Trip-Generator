@@ -1,0 +1,448 @@
+[
+    {
+        "city": "LOS ANGELES",
+        "code": "LAX",
+        "places": [
+            {
+                "dist": 16106.23392901,
+                "lat": 34.0612717,
+                "lon": -118.3085632,
+                "name": "Wiltern Theatre and Pellissier Building"
+            },
+            {
+                "dist": 16126.88778588,
+                "lat": 34.0619087,
+                "lon": -118.3092804,
+                "name": "Wiltern"
+            },
+            {
+                "dist": 16698.87139511,
+                "lat": 34.0205154,
+                "lon": -118.2538147,
+                "name": "Lincoln Theatre"
+            },
+            {
+                "dist": 17989.59751115,
+                "lat": 34.042717,
+                "lon": -118.2553864,
+                "name": "Orpheum Theatre"
+            },
+            {
+                "dist": 18989.73104116,
+                "lat": 34.0982513,
+                "lon": -118.3239822,
+                "name": "Nickelodeon on Sunset"
+            },
+            {
+                "dist": 19002.60726497,
+                "lat": 34.0984955,
+                "lon": -118.324295,
+                "name": "Hollywood Palladium"
+            },
+            {
+                "dist": 19325.37844143,
+                "lat": 34.1022034,
+                "lon": -118.3257675,
+                "name": "Pantages Theater"
+            },
+            {
+                "dist": 8912.31769422,
+                "lat": 33.8618584,
+                "lon": -118.4010696,
+                "name": "lighthouse cafe"
+            },
+            {
+                "dist": 14451.39830005,
+                "lat": 34.0626335,
+                "lon": -118.3489151,
+                "name": "El Rey Theatre"
+            },
+            {
+                "dist": 15581.90210091,
+                "lat": 34.0816154,
+                "lon": -118.3893509,
+                "name": "Troubadour"
+            }
+        ],
+        "tickets": [
+            {
+                "id": "1",
+                "itineraries": [
+                    {
+                        "aircraft": "AIRBUS  A220-300",
+                        "arrive": [
+                            "LAX",
+                            "3",
+                            "2023-02-15T09:00:00"
+                        ],
+                        "carrier": "DELTA AIR LINES",
+                        "depart": [
+                            "IAH",
+                            "A",
+                            "2023-02-15T07:34:00"
+                        ],
+                        "duration": "3H26M"
+                    }
+                ],
+                "price": "68.93",
+                "segments": 1
+            },
+            {
+                "id": "2",
+                "itineraries": [
+                    {
+                        "aircraft": "AIRBUS  A220-300",
+                        "arrive": [
+                            "LAX",
+                            "3",
+                            "2023-02-15T16:58:00"
+                        ],
+                        "carrier": "DELTA AIR LINES",
+                        "depart": [
+                            "IAH",
+                            "A",
+                            "2023-02-15T15:30:00"
+                        ],
+                        "duration": "3H28M"
+                    }
+                ],
+                "price": "68.93",
+                "segments": 1
+            },
+            {
+                "id": "3",
+                "itineraries": [
+                    {
+                        "aircraft": "AIRBUS A320 (SHARKLETS)",
+                        "arrive": [
+                            "LAX",
+                            "5",
+                            "2023-02-15T08:00:00"
+                        ],
+                        "carrier": "SPIRIT AIRLINES",
+                        "depart": [
+                            "IAH",
+                            "A",
+                            "2023-02-15T06:15:00"
+                        ],
+                        "duration": "3H45M"
+                    }
+                ],
+                "price": "73.87",
+                "segments": 1
+            },
+            {
+                "id": "4",
+                "itineraries": [
+                    {
+                        "aircraft": "AIRBUS A320 (SHARKLETS)",
+                        "arrive": [
+                            "LAX",
+                            "5",
+                            "2023-02-15T13:31:00"
+                        ],
+                        "carrier": "SPIRIT AIRLINES",
+                        "depart": [
+                            "IAH",
+                            "A",
+                            "2023-02-15T11:46:00"
+                        ],
+                        "duration": "3H45M"
+                    }
+                ],
+                "price": "73.87",
+                "segments": 1
+            },
+            {
+                "id": "5",
+                "itineraries": [
+                    {
+                        "aircraft": "AIRBUS A320 (SHARKLETS)",
+                        "arrive": [
+                            "LAX",
+                            "5",
+                            "2023-02-15T08:43:00"
+                        ],
+                        "carrier": "SPIRIT AIRLINES",
+                        "depart": [
+                            "IAH",
+                            "A",
+                            "2023-02-15T06:55:00"
+                        ],
+                        "duration": "3H48M"
+                    }
+                ],
+                "price": "73.87",
+                "segments": 1
+            }
+        ]
+    },
+    {
+        "city": "CHICAGO",
+        "code": "ORD",
+        "places": [
+            {
+                "dist": 18724.26681102,
+                "lat": 41.9202271,
+                "lon": -87.6923447,
+                "name": "Congress Theater"
+            },
+            {
+                "dist": 20209.08089642,
+                "lat": 41.9694519,
+                "lon": -87.6605148,
+                "name": "Uptown Theatre"
+            },
+            {
+                "dist": 31246.17413834,
+                "lat": 41.8097,
+                "lon": -87.603302,
+                "name": "Sutherland Hotel"
+            },
+            {
+                "dist": 3209.0925568,
+                "lat": 42.0052147,
+                "lon": -87.8877182,
+                "name": "Allstate Arena"
+            },
+            {
+                "dist": 20251.13439407,
+                "lat": 41.9692497,
+                "lon": -87.6600189,
+                "name": "Green Mill Cocktail Lounge"
+            },
+            {
+                "dist": 20265.75958106,
+                "lat": 41.9685707,
+                "lon": -87.6598969,
+                "name": "Riviera Theatre"
+            },
+            {
+                "dist": 21201.393907,
+                "lat": 41.9394989,
+                "lon": -87.653801,
+                "name": "The Vic Theatre"
+            },
+            {
+                "dist": 21279.2978893,
+                "lat": 41.9139175,
+                "lon": -87.6626358,
+                "name": "The Hideout"
+            },
+            {
+                "dist": 21884.52600587,
+                "lat": 41.9259148,
+                "lon": -87.6498108,
+                "name": "Lincoln Hall"
+            },
+            {
+                "dist": 25805.77656869,
+                "lat": 41.8759689,
+                "lon": -87.625145,
+                "name": "Auditorium Theatre"
+            }
+        ],
+        "tickets": [
+            {
+                "id": "1",
+                "itineraries": [
+                    {
+                        "aircraft": "AIRBUS A320 (SHARKLETS)",
+                        "arrive": [
+                            "ORD",
+                            "3",
+                            "2023-02-15T23:30:00"
+                        ],
+                        "carrier": "SPIRIT AIRLINES",
+                        "depart": [
+                            "IAH",
+                            "A",
+                            "2023-02-15T20:55:00"
+                        ],
+                        "duration": "2H35M"
+                    }
+                ],
+                "price": "31.91",
+                "segments": 1
+            },
+            {
+                "id": "2",
+                "itineraries": [
+                    {
+                        "aircraft": "AIRBUS A320 (SHARKLETS)",
+                        "arrive": [
+                            "LAX",
+                            "5",
+                            "2023-02-15T13:31:00"
+                        ],
+                        "carrier": "SPIRIT AIRLINES",
+                        "depart": [
+                            "IAH",
+                            "A",
+                            "2023-02-15T11:46:00"
+                        ],
+                        "duration": "3H45M"
+                    },
+                    {
+                        "aircraft": "AIRBUS A320 (SHARKLETS)",
+                        "arrive": [
+                            "ORD",
+                            "3",
+                            "2023-02-15T20:22:00"
+                        ],
+                        "carrier": "SPIRIT AIRLINES",
+                        "depart": [
+                            "LAX",
+                            "5",
+                            "2023-02-15T14:27:00"
+                        ],
+                        "duration": "3H55M"
+                    }
+                ],
+                "price": "57.19",
+                "segments": 2
+            },
+            {
+                "id": "3",
+                "itineraries": [
+                    {
+                        "aircraft": "AIRBUS A320 (SHARKLETS)",
+                        "arrive": [
+                            "LAX",
+                            "5",
+                            "2023-02-15T08:43:00"
+                        ],
+                        "carrier": "SPIRIT AIRLINES",
+                        "depart": [
+                            "IAH",
+                            "A",
+                            "2023-02-15T06:55:00"
+                        ],
+                        "duration": "3H48M"
+                    },
+                    {
+                        "aircraft": "AIRBUS A320NEO",
+                        "arrive": [
+                            "ORD",
+                            "3",
+                            "2023-02-15T16:45:00"
+                        ],
+                        "carrier": "SPIRIT AIRLINES",
+                        "depart": [
+                            "LAX",
+                            "5",
+                            "2023-02-15T10:50:00"
+                        ],
+                        "duration": "3H55M"
+                    }
+                ],
+                "price": "57.19",
+                "segments": 2
+            },
+            {
+                "id": "4",
+                "itineraries": [
+                    {
+                        "aircraft": "AIRBUS A320 (SHARKLETS)",
+                        "arrive": [
+                            "LAX",
+                            "5",
+                            "2023-02-15T08:00:00"
+                        ],
+                        "carrier": "SPIRIT AIRLINES",
+                        "depart": [
+                            "IAH",
+                            "A",
+                            "2023-02-15T06:15:00"
+                        ],
+                        "duration": "3H45M"
+                    },
+                    {
+                        "aircraft": "AIRBUS A320NEO",
+                        "arrive": [
+                            "ORD",
+                            "3",
+                            "2023-02-15T16:45:00"
+                        ],
+                        "carrier": "SPIRIT AIRLINES",
+                        "depart": [
+                            "LAX",
+                            "5",
+                            "2023-02-15T10:50:00"
+                        ],
+                        "duration": "3H55M"
+                    }
+                ],
+                "price": "57.19",
+                "segments": 2
+            }
+        ]
+    },
+    {
+        "city": "DENVER",
+        "code": "DEN",
+        "places": [
+            {
+                "dist": 27406.38085169,
+                "lat": 39.7404289,
+                "lon": -104.9483719,
+                "name": "Bluebird Theater"
+            },
+            {
+                "dist": 29461.32795451,
+                "lat": 39.7403145,
+                "lon": -104.9753189,
+                "name": "Ogden Theatre"
+            },
+            {
+                "dist": 29505.78491325,
+                "lat": 39.7388611,
+                "lon": -104.9749527,
+                "name": "Shadow Theatre"
+            },
+            {
+                "dist": 35376.84987845,
+                "lat": 39.6576691,
+                "lon": -104.9880219,
+                "name": "Gothic Theatre"
+            },
+            {
+                "dist": 34570.78739411,
+                "lat": 39.600563,
+                "lon": -104.8938293,
+                "name": "Fiddler's Green Ampitheatre"
+            },
+            {
+                "dist": 30201.88709683,
+                "lat": 39.7532349,
+                "lon": -104.9924698,
+                "name": "Marquis Theater"
+            },
+            {
+                "dist": 30402.47839689,
+                "lat": 39.7533379,
+                "lon": -104.9950638,
+                "name": "Summit"
+            },
+            {
+                "dist": 31658.02487793,
+                "lat": 39.7163162,
+                "lon": -104.9877243,
+                "name": "hi-dive"
+            },
+            {
+                "dist": 31907.08173954,
+                "lat": 39.679554,
+                "lon": -104.9589005,
+                "name": "Merchant's Mile High Saloon"
+            },
+            {
+                "dist": 33845.53057192,
+                "lat": 39.7277107,
+                "lon": -105.0242462,
+                "name": "Seventh Circle Music Collective"
+            }
+        ],
+        "tickets": []
+    }
+]

@@ -1,0 +1,178 @@
+{
+    "city": "LOS ANGELES",
+    "code": "LAX",
+    "places": [
+        {
+            "dist": 16106.23392901,
+            "lat": 34.0612717,
+            "lon": -118.3085632,
+            "name": "Wiltern Theatre and Pellissier Building"
+        },
+        {
+            "dist": 16126.88778588,
+            "lat": 34.0619087,
+            "lon": -118.3092804,
+            "name": "Wiltern"
+        },
+        {
+            "dist": 16698.87139511,
+            "lat": 34.0205154,
+            "lon": -118.2538147,
+            "name": "Lincoln Theatre"
+        },
+        {
+            "dist": 17989.59751115,
+            "lat": 34.042717,
+            "lon": -118.2553864,
+            "name": "Orpheum Theatre"
+        },
+        {
+            "dist": 18989.73104116,
+            "lat": 34.0982513,
+            "lon": -118.3239822,
+            "name": "Nickelodeon on Sunset"
+        },
+        {
+            "dist": 19002.60726497,
+            "lat": 34.0984955,
+            "lon": -118.324295,
+            "name": "Hollywood Palladium"
+        },
+        {
+            "dist": 19325.37844143,
+            "lat": 34.1022034,
+            "lon": -118.3257675,
+            "name": "Pantages Theater"
+        },
+        {
+            "dist": 8912.31769422,
+            "lat": 33.8618584,
+            "lon": -118.4010696,
+            "name": "lighthouse cafe"
+        },
+        {
+            "dist": 14451.39830005,
+            "lat": 34.0626335,
+            "lon": -118.3489151,
+            "name": "El Rey Theatre"
+        },
+        {
+            "dist": 15581.90210091,
+            "lat": 34.0816154,
+            "lon": -118.3893509,
+            "name": "Troubadour"
+        }
+    ],
+    "tickets": [
+        {
+            "id": "1",
+            "itineraries": [
+                {
+                    "aircraft": "AIRBUS  A220-300",
+                    "arrive": [
+                        "LAX",
+                        "3",
+                        "2023-02-15T09:00:00"
+                    ],
+                    "carrier": "DELTA AIR LINES",
+                    "depart": [
+                        "IAH",
+                        "A",
+                        "2023-02-15T07:34:00"
+                    ],
+                    "duration": "3H26M"
+                }
+            ],
+            "price": "68.93",
+            "segments": 1
+        },
+        {
+            "id": "2",
+            "itineraries": [
+                {
+                    "aircraft": "AIRBUS  A220-300",
+                    "arrive": [
+                        "LAX",
+                        "3",
+                        "2023-02-15T16:58:00"
+                    ],
+                    "carrier": "DELTA AIR LINES",
+                    "depart": [
+                        "IAH",
+                        "A",
+                        "2023-02-15T15:30:00"
+                    ],
+                    "duration": "3H28M"
+                }
+            ],
+            "price": "68.93",
+            "segments": 1
+        },
+        {
+            "id": "3",
+            "itineraries": [
+                {
+                    "aircraft": "AIRBUS A320 (SHARKLETS)",
+                    "arrive": [
+                        "LAX",
+                        "5",
+                        "2023-02-15T08:00:00"
+                    ],
+                    "carrier": "SPIRIT AIRLINES",
+                    "depart": [
+                        "IAH",
+                        "A",
+                        "2023-02-15T06:15:00"
+                    ],
+                    "duration": "3H45M"
+                }
+            ],
+            "price": "73.87",
+            "segments": 1
+        },
+        {
+            "id": "4",
+            "itineraries": [
+                {
+                    "aircraft": "AIRBUS A320 (SHARKLETS)",
+                    "arrive": [
+                        "LAX",
+                        "5",
+                        "2023-02-15T13:31:00"
+                    ],
+                    "carrier": "SPIRIT AIRLINES",
+                    "depart": [
+                        "IAH",
+                        "A",
+                        "2023-02-15T11:46:00"
+                    ],
+                    "duration": "3H45M"
+                }
+            ],
+            "price": "73.87",
+            "segments": 1
+        },
+        {
+            "id": "5",
+            "itineraries": [
+                {
+                    "aircraft": "AIRBUS A320 (SHARKLETS)",
+                    "arrive": [
+                        "LAX",
+                        "5",
+                        "2023-02-15T08:43:00"
+                    ],
+                    "carrier": "SPIRIT AIRLINES",
+                    "depart": [
+                        "IAH",
+                        "A",
+                        "2023-02-15T06:55:00"
+                    ],
+                    "duration": "3H48M"
+                }
+            ],
+            "price": "73.87",
+            "segments": 1
+        }
+    ]
+}
