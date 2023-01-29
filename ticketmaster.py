@@ -1,6 +1,7 @@
 import ticketpy
+import constants
 
-tm_client = ticketpy.ApiClient('45LwqqL0VU4G5PGAIsAnYebkwpNRQpGf')
+tm_client = ticketpy.ApiClient(constants.ticketmaster_key)
 
 pages = tm_client.events.find(
     classification_name='sports',
