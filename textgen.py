@@ -13,11 +13,20 @@ def gen(city, theme, locs):
   top_p=1,)
   return str(response['choices'][0]['text'])
 
+def genloc(city, loc,time):
+  openai.api_key = "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"
+  response = openai.Completion.create(
+  model="text-davinci-003",
+  prompt=f"write an descriptive paragraph about the speciality of {loc} in {city} that is around {time} minutes away from the airport",
+  temperature=0.7,
+  max_tokens=50,
+  top_p=1,)
+  return str(response['choices'][0]['text'])
 def gentitle(theme):
   openai.api_key = "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"
   response = openai.Completion.create(
   model="text-davinci-003",
   prompt=f"Generate a title for an airline trip about {theme}",
-  max_tokens=10,
+  max_tokens=13,
   top_p=1)
   return str(response['choices'][0]['text'][1:])

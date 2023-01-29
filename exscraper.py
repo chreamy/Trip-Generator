@@ -2,6 +2,7 @@ import requests
 import json
 import processticket
 def ticket(org,des,date):
+    print(org,des,date)
     consumer_key = "FKkkVIgmjbAZDhRKIdgEyBb3cd9XaI3R"
     consumer_secret = "AzWpPCrnJP3Jgfgk"
     payload = {
@@ -57,4 +58,4 @@ def ticket(org,des,date):
     #json.dump(json.loads(response.text), outfile, sort_keys=True, indent=4)
     #outfile.close()
     return processticket.process(json.loads(response.text))
-#ticket('IAH','JFK','2023-02-15')
+#ticket('JFK','EWR','2023-02-15')

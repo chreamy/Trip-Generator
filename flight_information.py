@@ -2,9 +2,8 @@ import json
 from flight import flight, short_path
 
 
-def load_flight_routes():
-    with open('data.json') as file:
-        data = json.load(file)
+def load_flight_routes(data):
+
         # list of flight routes
         flight_routes = []
         for f in data.get('tickets'):
@@ -21,8 +20,7 @@ def load_flight_routes():
                                         carrier=p.get('carrier'))
                 flight_.add_path(short_path_)
             flight_routes.append(flight_)
-
-    return flight_routes
+        return flight_routes
 
 
 

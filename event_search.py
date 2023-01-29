@@ -1,7 +1,6 @@
 import ticketpy
 import constants
-
-tm_client = ticketpy.ApiClient(constants.ticketmaster_key)
+tm_client = ticketpy.ApiClient('45LwqqL0VU4G5PGAIsAnYebkwpNRQpGf')
 
 def search(city,subject,start_date,end_date):
     '''
@@ -47,7 +46,7 @@ def optimal(cities,subject,start_date,end_date):
     max_val = max(frequencies)
 
     index = frequencies.index(max_val)
-    return cities[index]
+    return search(cities[index],subject,start_date,end_date)
 
 # Example
 cities = ['Atlanta', 'Houston', 'New York','Los Angeles']

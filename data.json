@@ -1,66 +1,66 @@
 {
-    "city": "CHICAGO",
-    "code": "ORD",
+    "city": "SAN FRANCISCO",
+    "code": "SFO",
     "places": [
         {
-            "dist": 27077.38839058,
-            "lat": 41.8675423,
-            "lon": -87.6136856,
-            "name": "Shedd Aquarium"
+            "dist": 2762.66475183,
+            "lat": 37.5947838,
+            "lon": -122.382225,
+            "name": "Peninsula Museum of Art"
         },
         {
-            "dist": 16944.88876032,
-            "lat": 41.834938,
-            "lon": -87.8367996,
-            "name": "Brookfield Zoo"
+            "dist": 13793.8755582,
+            "lat": 37.7390518,
+            "lon": -122.4154358,
+            "name": "Inclusions Gallery"
         },
         {
-            "dist": 21184.53163186,
-            "lat": 41.8780136,
-            "lon": -88.1206741,
-            "name": "Cosley Zoo"
+            "dist": 15236.07819023,
+            "lat": 37.7525787,
+            "lon": -122.4148102,
+            "name": "Adobe Books and Arts Cooperative"
         },
         {
-            "dist": 23305.86396446,
-            "lat": 41.9212646,
-            "lon": -87.6337662,
-            "name": "Lincoln Park Zoo"
+            "dist": 15854.43991242,
+            "lat": 37.7570114,
+            "lon": -122.4213715,
+            "name": "Artists' Television Access"
         },
         {
-            "dist": 17464.80842856,
-            "lat": 41.8315544,
-            "lon": -87.8308792,
-            "name": "Hamill Family Wild Encounters"
+            "dist": 16535.97127247,
+            "lat": 37.7643051,
+            "lon": -122.4164124,
+            "name": "A Very Small Gallery"
         },
         {
-            "dist": 23201.00332978,
-            "lat": 41.9210358,
-            "lon": -87.6351776,
-            "name": "Pritzker Family Children's Zoo"
+            "dist": 16595.94343786,
+            "lat": 37.7672005,
+            "lon": -122.4000015,
+            "name": "Wattis Institute for Contemporary Arts"
         },
         {
-            "dist": 23442.8967944,
-            "lat": 41.9172401,
-            "lon": -87.6336517,
-            "name": "Farm-in-the-Zoo"
+            "dist": 16688.13187616,
+            "lat": 37.7653389,
+            "lon": -122.4184341,
+            "name": "The Lab"
         },
         {
-            "dist": 26335.52578965,
-            "lat": 42.1153488,
-            "lon": -88.164238,
-            "name": "Birds of prey"
+            "dist": 16774.33603248,
+            "lat": 37.7655182,
+            "lon": -122.4216309,
+            "name": "ArtZone 461 Gallery"
         },
         {
-            "dist": 30315.8316608,
-            "lat": 42.040741,
-            "lon": -88.2604752,
-            "name": "Lords Park Zoo"
+            "dist": 16812.47762818,
+            "lat": 37.7658005,
+            "lon": -122.4219971,
+            "name": "Intersection for the Arts"
         },
         {
-            "dist": 30364.03757671,
-            "lat": 42.0413017,
-            "lon": -88.2609024,
-            "name": "Farm Zoo"
+            "dist": 17476.06827839,
+            "lat": 37.7421837,
+            "lon": -122.4983978,
+            "name": "Far Out Gallery"
         }
     ],
     "tickets": [
@@ -68,134 +68,111 @@
             "id": "1",
             "itineraries": [
                 {
-                    "aircraft": "AIRBUS A320 (SHARKLETS)",
+                    "aircraft": "BOEING 767-300 (WINGLETS)",
                     "arrive": [
-                        "ORD",
+                        "LAX",
                         "3",
-                        "2023-02-15T23:30:00"
+                        "2023-02-15T13:40:00"
                     ],
-                    "carrier": "SPIRIT AIRLINES",
+                    "carrier": "DELTA AIR LINES",
                     "depart": [
-                        "IAH",
-                        "A",
-                        "2023-02-15T20:55:00"
+                        "JFK",
+                        "4",
+                        "2023-02-15T10:31:00"
                     ],
-                    "duration": "2H35M"
+                    "duration": "6H9M"
                 }
             ],
-            "price": "31.91",
+            "price": "148.85",
             "segments": 1
         },
         {
             "id": "2",
             "itineraries": [
                 {
-                    "aircraft": "AIRBUS A320 (SHARKLETS)",
+                    "aircraft": "BOEING 767-300 (WINGLETS)",
                     "arrive": [
                         "LAX",
-                        "5",
-                        "2023-02-15T13:31:00"
-                    ],
-                    "carrier": "SPIRIT AIRLINES",
-                    "depart": [
-                        "IAH",
-                        "A",
-                        "2023-02-15T11:46:00"
-                    ],
-                    "duration": "3H45M"
-                },
-                {
-                    "aircraft": "AIRBUS A320 (SHARKLETS)",
-                    "arrive": [
-                        "ORD",
                         "3",
-                        "2023-02-15T20:22:00"
+                        "2023-02-15T17:14:00"
                     ],
-                    "carrier": "SPIRIT AIRLINES",
+                    "carrier": "DELTA AIR LINES",
                     "depart": [
-                        "LAX",
-                        "5",
-                        "2023-02-15T14:27:00"
+                        "JFK",
+                        "4",
+                        "2023-02-15T14:05:00"
                     ],
-                    "duration": "3H55M"
+                    "duration": "6H9M"
                 }
             ],
-            "price": "57.19",
-            "segments": 2
+            "price": "148.85",
+            "segments": 1
         },
         {
             "id": "3",
             "itineraries": [
                 {
-                    "aircraft": "AIRBUS A320 (SHARKLETS)",
+                    "aircraft": "BOEING 767-300 (WINGLETS)",
                     "arrive": [
                         "LAX",
-                        "5",
-                        "2023-02-15T08:43:00"
-                    ],
-                    "carrier": "SPIRIT AIRLINES",
-                    "depart": [
-                        "IAH",
-                        "A",
-                        "2023-02-15T06:55:00"
-                    ],
-                    "duration": "3H48M"
-                },
-                {
-                    "aircraft": "AIRBUS A320NEO",
-                    "arrive": [
-                        "ORD",
                         "3",
-                        "2023-02-15T16:45:00"
+                        "2023-02-15T15:25:00"
                     ],
-                    "carrier": "SPIRIT AIRLINES",
+                    "carrier": "DELTA AIR LINES",
                     "depart": [
-                        "LAX",
-                        "5",
-                        "2023-02-15T10:50:00"
+                        "JFK",
+                        "4",
+                        "2023-02-15T12:15:00"
                     ],
-                    "duration": "3H55M"
+                    "duration": "6H10M"
                 }
             ],
-            "price": "57.19",
-            "segments": 2
+            "price": "148.85",
+            "segments": 1
         },
         {
             "id": "4",
             "itineraries": [
                 {
-                    "aircraft": "AIRBUS A320 (SHARKLETS)",
+                    "aircraft": "BOEING 767-300 (WINGLETS)",
                     "arrive": [
                         "LAX",
-                        "5",
-                        "2023-02-15T08:00:00"
-                    ],
-                    "carrier": "SPIRIT AIRLINES",
-                    "depart": [
-                        "IAH",
-                        "A",
-                        "2023-02-15T06:15:00"
-                    ],
-                    "duration": "3H45M"
-                },
-                {
-                    "aircraft": "AIRBUS A320NEO",
-                    "arrive": [
-                        "ORD",
                         "3",
-                        "2023-02-15T16:45:00"
+                        "2023-02-15T11:55:00"
                     ],
-                    "carrier": "SPIRIT AIRLINES",
+                    "carrier": "DELTA AIR LINES",
                     "depart": [
-                        "LAX",
-                        "5",
-                        "2023-02-15T10:50:00"
+                        "JFK",
+                        "4",
+                        "2023-02-15T08:35:00"
                     ],
-                    "duration": "3H55M"
+                    "duration": "6H20M"
                 }
             ],
-            "price": "57.19",
-            "segments": 2
+            "price": "148.85",
+            "segments": 1
+        },
+        {
+            "id": "5",
+            "itineraries": [
+                {
+                    "aircraft": "BOEING 767-300 (WINGLETS)",
+                    "arrive": [
+                        "LAX",
+                        "3",
+                        "2023-02-15T19:00:00"
+                    ],
+                    "carrier": "DELTA AIR LINES",
+                    "depart": [
+                        "JFK",
+                        "4",
+                        "2023-02-15T15:45:00"
+                    ],
+                    "duration": "6H15M"
+                }
+            ],
+            "price": "148.85",
+            "segments": 1
         }
     ]
 }

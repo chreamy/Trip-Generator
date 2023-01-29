@@ -8,6 +8,11 @@ import textgen
 import image
 import mailformat
 import flight_ticket
+import interactive_map
+import upload
+import time
+import math
+import event_search
 
 sender_email = "testrunpython@gmail.com"
 receiver_email = "chrislinkou@gmail.com"  # chrislinkou
@@ -24,7 +29,7 @@ def codetocity(code,data):
             return dat['city']
     return 0
 def gencontent(data,theme,ticketsc):
-    locs = [data['places'][i]['name'] for i in range(3)]
+    locs,dists = [data['places'][i]['name'] for i in range(3)],[data['places'][i]['dist'] for i in range(3)]
     imgs = list([image.getimage(i) for i in locs])
     cityimg = image.getimage(data['city'])
     out = {'imgs':[],'descs':[]}
@@ -37,9 +42,17 @@ def gencontent(data,theme,ticketsc):
     out['imgs'].append(img)
     img, imgs[2] = image.usebestratio(imgs[2], 0.5)
     out['imgs'].append(img)
-    out['imgs'].append(ticketsc)
+    #out['imgs'].append(ticketsc)
+    interactive_map.create_map(data)
+    time.sleep(5)
+    out['imgs'].append(str(upload.upload('./map.png')))
     out['descs'].append(textgen.gentitle(theme))
     out['descs'].append(text)
+    t = data['tickets']
+    for i in range(3):
+        out['descs'].append([t[i]['itineraries'][0]['carrier'],t[i]['price'],t[i]['itineraries'][0]['duration'],t[i]['itineraries'][0]['aircraft'],t[i]['itineraries'][0]['arrive'][2],t[i]['itineraries'][0]['depart'][0],t[i]['itineraries'][0]['arrive'][0]])
+    for i in range(3):
+        out['descs'].append(textgen.genloc(data['city'].lower().title(),locs[i],math.ceil(dists[i]*0.0019)))
     return out
 
 
@@ -50,10 +63,11 @@ def send(name, theme, loc,date, message=message):
     outfile = open(f"data.json", "w")
     json.dump(data, outfile, sort_keys=True, indent=4)
     outfile.close()
-    ticketsc = flight_ticket.screenshot(loc,data['city'],date)
+    #ticketsc = flight_ticket.screenshot(loc,data['city'],date)
    #out = open('imgs.txt','w')
     #out.write(str(imgs))
     #out.close()
+    ticketsc = ''
     content=gencontent(data,theme,ticketsc)
     #plain = MIMEText(f"""{text.strip()}""", "plain")
     #out = open('a.html', 'w')
@@ -71,7 +85,7 @@ def send(name, theme, loc,date, message=message):
             sender_email, receiver_email, message.as_string()
             )
 #html = mailformat.gethtml()
-send('Chris','Zoos', 'IAH', '2023-02-15')
+send('Chris','Art Galleries', 'JFK', '2023-02-15')
 
 def sendtest(message=message):
     message["Subject"] = f""

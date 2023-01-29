@@ -7,8 +7,8 @@ import os
 import time
 
 
-def create_map():
-    flight_routes = flight_information.load_flight_routes()
+def create_map(data):
+    flight_routes = flight_information.load_flight_routes(data)
     start = flight_routes[0].path[0].dep_IATA
     start_coordinates = airport_database.lat(start), airport_database.long(start)
 
@@ -89,4 +89,4 @@ def create_map():
     m.save('map.html')
 
 
-create_map()
+#create_map()

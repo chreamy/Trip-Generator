@@ -112,7 +112,7 @@ def gethtml(data):
 		h1{
 			/*@editable*/color:#FFFFFF;
 			/*@editable*/font-family:'Noticia Text', Georgia, 'Times New Roman', serif;
-			/*@editable*/font-size:40px;
+			/*@editable*/font-size:35px;
 			/*@editable*/font-style:normal;
 			/*@editable*/font-weight:bold;
 			/*@editable*/line-height:150%;
@@ -826,7 +826,7 @@ def gethtml(data):
         
             
 
-            <img alt="Darla Grey" src=\""""+imgs[1]+"""\" width="164" style="max-width:448px;height:200%;overflow:hidden;" class="mcnImage">
+            <img alt="Darla Grey" src=\""""+imgs[1]+"""\" width="164" style="max-width:448px;height:auto;aspect-ratio:0.7;overflow:hidden;" class="mcnImage">
             
         
         </td>
@@ -862,7 +862,7 @@ def gethtml(data):
                         
                         <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
                         
-                            PLACEHOLDER
+                            """+desc[5]+"""
                         </td>
                     </tr>
                 </tbody></table>
@@ -898,7 +898,7 @@ def gethtml(data):
         
             
 
-            <img alt="Justin Greene" src=\""""+imgs[2]+"""\" width="164" style="max-width:448px;height:200%;overflow:hidden;" class="mcnImage">
+            <img alt="Justin Greene" src=\""""+imgs[2]+"""\" width="164" style="max-width:448px;height:auto;aspect-ratio:0.7;overflow:hidden;" class="mcnImage">
             
         
         </td>
@@ -934,7 +934,7 @@ def gethtml(data):
                         
                         <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
                         
-                            PLACEHOLDER
+                            """+desc[6]+"""
                         </td>
                     </tr>
                 </tbody></table>
@@ -967,7 +967,7 @@ def gethtml(data):
                             <td class="mcnImageContent" valign="top" style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0; text-align:center;">
                                 
                                     
-                                        <img align="center" alt="" src=\""""+imgs[3]+"""\" width="164" style="max-width:290px;height:200%;overflow:hidden; padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage">
+                                        <img align="center" alt="" src=\""""+imgs[3]+"""\" width="164" style="max-width:290px;height:auto;aspect-ratio:0.7;overflow:hidden; padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage">
                                     
                                 
                             </td>
@@ -993,7 +993,7 @@ def gethtml(data):
                         
                         <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
                         
-                            PLACEHOLDER
+                            """+desc[7]+"""
                         </td>
                     </tr>
                 </tbody></table>
@@ -1029,13 +1029,7 @@ def gethtml(data):
     <tbody class="mcnDividerBlockOuter">
         <tr>
             <td class="mcnDividerBlockInner" style="min-width: 100%; padding: 0px 18px;">
-                <table class="mcnDividerContent" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;border-top: 2px solid #DE5B49;">
-                    <tbody><tr>
-                        <td>
-                            <span></span>
-                        </td>
-                    </tr>
-                </tbody></table>
+                
 <!--            
                 <td class="mcnDividerBlockInner" style="padding: 18px;">
                 <hr class="mcnDividerContent" style="border-bottom-color:none; border-left-color:none; border-right-color:none; border-bottom-width:0; border-left-width:0; border-right-width:0; margin-top:0; margin-right:0; margin-bottom:0; margin-left:0;" />
@@ -1052,7 +1046,7 @@ def gethtml(data):
                             <td class="mcnImageContent" valign="top" style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0; text-align:center;">
                                 
                                     
-                                        <img align="center" alt="" src=\""""+imgs[4]+"""\" width="290" style="max-width:290px; padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage">
+                                        <img align="center" alt="" src=\""""+imgs[4]+"""\" width="500" style="max-width:500px; padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage">
                                     
                                 
                             </td>
@@ -1205,17 +1199,17 @@ def gethtml(data):
                             <table border="0" cellspacing="0" class="mcnTextContentContainer" width="100%" style="min-width: 100% !important;background-color: #404040;">
                                 <tbody><tr>
                                     <td valign="top" class="mcnTextContent" style="padding: 18px;color: #F2F2F2;font-family: Helvetica;font-size: 14px;font-weight: normal;text-align: center;">
-                                        <div style="text-align: left;"><strong>CARRIER (IAH - &gt; JFK)</strong><br>
-Price:&nbsp; &nbsp; &nbsp; Duration:<br>
-Aircraft:&nbsp; &nbsp;Time:<br>
+                                        <div style="text-align: left;"><strong>"""+desc[2][0]+""" ("""+desc[2][5]+""" - &gt; """+desc[2][6]+""")</strong><br>
+Price:&nbsp;"""+desc[2][1]+""" &nbsp; &nbsp; Duration:&nbsp;"""+desc[2][2]+"""<br>
+Aircraft:&nbsp;"""+desc[2][3]+""" &nbsp;Time:&nbsp;"""+desc[2][4]+"""<br>
 <br>
-<strong>CARRIER (IAH - &gt; JFK)</strong><br>
-Price:&nbsp; &nbsp; &nbsp; Duration:<br>
-Aircraft:&nbsp; &nbsp;Time:<br>
+<strong>"""+desc[3][0]+""" ("""+desc[3][5]+""" - &gt; """+desc[3][6]+""")</strong><br>
+Price:&nbsp;"""+desc[3][1]+""" &nbsp; &nbsp; Duration:&nbsp;"""+desc[3][2]+"""<br>
+Aircraft:&nbsp;"""+desc[3][3]+""" &nbsp;Time:&nbsp;"""+desc[3][4]+"""<br>
 <br>
-<strong>CARRIER (IAH - &gt; JFK)</strong><br>
-Price:&nbsp; &nbsp; &nbsp; Duration:<br>
-Aircraft:&nbsp; &nbsp;Time:</div>
+<strong>"""+desc[4][0]+""" ("""+desc[4][5]+""" - &gt; """+desc[4][6]+""")</strong><br>
+Price:&nbsp;"""+desc[4][1]+""" &nbsp; &nbsp; Duration:&nbsp;"""+desc[4][2]+"""<br>
+Aircraft:&nbsp;"""+desc[4][3]+""" &nbsp;Time:&nbsp;"""+desc[4][4]+"""</div>
 
                                     </td>
                                 </tr>

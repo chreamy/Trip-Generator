@@ -2,9 +2,14 @@ import pprint
 import json
 
 def process(rawdat):
+
     x = [rawdat][0]
+    #pprint.pprint(rawdat)
     data = x['data']
-    dict = x['dictionaries']
+    try:
+        dict = x['dictionaries']
+    except:
+        return 0
     out = []
     for ticket in data:
         try:
