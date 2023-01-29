@@ -7,6 +7,7 @@ import json
 import textgen
 import image
 import mailformat
+import flight_ticket
 
 sender_email = "testrunpython@gmail.com"
 receiver_email = "chrislinkou@gmail.com"  # chrislinkou
@@ -22,7 +23,7 @@ def codetocity(code,data):
         if code in dat:
             return dat['city']
     return 0
-def gencontent(data,theme):
+def gencontent(data,theme,ticketsc):
     locs = [data['places'][i]['name'] for i in range(3)]
     imgs = list([image.getimage(i) for i in locs])
     cityimg = image.getimage(data['city'])
@@ -36,6 +37,7 @@ def gencontent(data,theme):
     out['imgs'].append(img)
     img, imgs[2] = image.usebestratio(imgs[2], 0.5)
     out['imgs'].append(img)
+    out['imgs'].append(ticketsc)
     out['descs'].append(textgen.gentitle(theme))
     out['descs'].append(text)
     return out
@@ -48,11 +50,11 @@ def send(name, theme, loc,date, message=message):
     outfile = open(f"data.json", "w")
     json.dump(data, outfile, sort_keys=True, indent=4)
     outfile.close()
-
+    ticketsc = flight_ticket.screenshot(loc,data['city'],date)
    #out = open('imgs.txt','w')
     #out.write(str(imgs))
     #out.close()
-    content=gencontent(data,theme)
+    content=gencontent(data,theme,ticketsc)
     #plain = MIMEText(f"""{text.strip()}""", "plain")
     #out = open('a.html', 'w')
     #out.write(html)

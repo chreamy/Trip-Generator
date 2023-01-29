@@ -1,6 +1,7 @@
 import requests
 import json
 from airportfinder import airportinfo
+import airport_database
 def radius(airport,type,rad):
     try:
         log,lat,city = airportinfo(airport)
