@@ -1,6 +1,7 @@
 import requests
 import json
-import Airport_database
+import airport
+import airport_database
 def airportinfo(code):
     """consumer_key = "FKkkVIgmjbAZDhRKIdgEyBb3cd9XaI3R"
     consumer_secret = "AzWpPCrnJP3Jgfgk"
@@ -23,10 +24,10 @@ def airportinfo(code):
     """outfile = open(f"airport {code}.json", "w")
     json.dump(json.loads(response.text), outfile, sort_keys=True, indent=4)
     outfile.close()"""
-    db = Airport_database.import_database()
-    long = db.get(code).long
-    lat = db.get(code).lat
-    city = db.get(code).city
+    #db = airport.load_airport_database()
+    long = airport_database.long(code)
+    lat = airport_database.lat(code)
+    city = airport_database.city(code)
     #long = (json.loads(response.text)['data'][0]['geoCode']['longitude'])
     #lat = (json.loads(response.text)['data'][0]['geoCode']['latitude'])
     return long,lat,city

@@ -33,6 +33,7 @@ def getplaces(miles,type,loc,date):
             print(code,'invalid')
             count = -1
             places = []
+            city = ''
         print(code,'has',count,type,'in',miles,'miles')
         max.append({'name': code, 'city':city, 'count':count, 'placeslist' : places})
     max = sorted(max, key=lambda x: x['count'],reverse = True)
