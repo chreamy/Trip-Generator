@@ -25,10 +25,18 @@ def codetocity(code,data):
 def gencontent(data,theme):
     locs = [data['places'][i]['name'] for i in range(3)]
     imgs = list([image.getimage(i) for i in locs])
+    cityimg = image.getimage(data['city'])
     out = {'imgs':[],'descs':[]}
     text = str(textgen.gen(data['city'].lower().title(), theme, locs))
-    img, imgs = image.usebestratio(imgs[0],2)
+    img, cityimg = image.usebestratio(cityimg,2)
     out['imgs'].append(img)
+    img, imgs[0] = image.usebestratio(imgs[0], 0.5)
+    out['imgs'].append(img)
+    img, imgs[1] = image.usebestratio(imgs[1], 0.5)
+    out['imgs'].append(img)
+    img, imgs[2] = image.usebestratio(imgs[2], 0.5)
+    out['imgs'].append(img)
+    out['descs'].append(textgen.gentitle(theme))
     out['descs'].append(text)
     return out
 
@@ -61,7 +69,7 @@ def send(name, theme, loc,date, message=message):
             sender_email, receiver_email, message.as_string()
             )
 #html = mailformat.gethtml()
-send('Chris','Music Venues', 'IAH', '2023-02-15')
+send('Chris','Zoos', 'IAH', '2023-02-15')
 
 def sendtest(message=message):
     message["Subject"] = f""
