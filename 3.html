@@ -1,8 +1,4 @@
-
-def gethtml(data):
-    desc = data['descs']
-    imgs = data['imgs']
-    return """<!doctype html>
+<!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
     <head>
         <!-- NAME: ART NEWSLETTER -->
@@ -689,7 +685,8 @@ def gethtml(data):
                         
                         <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
                         
-                            <h1>"""+desc[0]+"""</h1>
+                            <h1>
+Exploring Monuments: A Journey of History and Culture</h1>
 
                         </td>
                     </tr>
@@ -741,7 +738,9 @@ def gethtml(data):
                         
                         <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
                         
-                            """+desc[1]+"""
+                            
+
+Welcome to our Monuments-themed trip to Boston! On this trip, you'll get to explore some of the most iconic monuments in the city. First, you'll visit the Bunker Hill Monument, a 221-foot granite obelisk that commemorates the Battle of Bunker Hill. You'll be able to climb the 294 steps to the top of the monument and take in the breathtaking views of the city. Next, you'll visit the 1767 Milestones, a series of granite markers that were placed along the roads of colonial Boston to mark the distance to the city center. You'll also get to explore the Lucius Clapp Memorial, a bronze statue of a Revolutionary War soldier that stands in the center of Boston Common. This trip is sure to be an unforgettable experience, so don't miss out!
                         </td>
                     </tr>
                 </tbody></table>
@@ -783,7 +782,7 @@ def gethtml(data):
                             <td class="mcnImageContent" valign="top" style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0; text-align:center;">
                                 
                                     
-                                        <img align="center" alt="" src=\""""+imgs[0]+"""\" width="567" style="max-width:500.imgpx; padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage">
+                                        <img align="center" alt="" src="http://res.cloudinary.com/simpleview/image/upload/v1466799831/clients/boston/c07044da_9483_4fd5_8e37_5b75513dcc80_6b058b6f-7bdc-4f11-b217-4561c07901f3.jpg" width="567" style="max-width:500.imgpx; padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage">
                                     
                                 
                             </td>
@@ -826,7 +825,7 @@ def gethtml(data):
         
             
 
-            <img alt="Darla Grey" src=\""""+imgs[1]+"""\" width="164" style="max-width:448px;height:auto;aspect-ratio:0.7;overflow:hidden;" class="mcnImage">
+            <img alt="Darla Grey" src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Bunker_hill_2009.JPG" width="164" style="max-width:448px;height:auto;aspect-ratio:0.7;overflow:hidden;" class="mcnImage">
             
         
         </td>
@@ -862,7 +861,9 @@ def gethtml(data):
                         
                         <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
                         
-                            """+desc[5]+"""
+                            
+
+The Bunker Hill Monument is an iconic monument located in the heart of Boston, just 10 minutes away from the airport. The 221-foot granite obelisk is a tribute to the Battle of Bunker Hill, fought during the Revolutionary War. The
                         </td>
                     </tr>
                 </tbody></table>
@@ -898,7 +899,7 @@ def gethtml(data):
         
             
 
-            <img alt="Justin Greene" src=\""""+imgs[2]+"""\" width="164" style="max-width:448px;height:auto;aspect-ratio:0.7;overflow:hidden;" class="mcnImage">
+            <img alt="Justin Greene" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/1767_Milestones_Marker_69.jpg/152px-1767_Milestones_Marker_69.jpg" width="164" style="max-width:448px;height:auto;aspect-ratio:0.7;overflow:hidden;" class="mcnImage">
             
         
         </td>
@@ -934,7 +935,9 @@ def gethtml(data):
                         
                         <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
                         
-                            """+desc[6]+"""
+                            
+
+1767 Milestones in Boston is the perfect place to enjoy a delicious meal in a warm and inviting atmosphere. Located just 16 minutes away from the airport, it is the perfect spot for travelers to get a taste of local cuisine before heading off
                         </td>
                     </tr>
                 </tbody></table>
@@ -967,7 +970,7 @@ def gethtml(data):
                             <td class="mcnImageContent" valign="top" style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0; text-align:center;">
                                 
                                     
-                                        <img align="center" alt="" src=\""""+imgs[3]+"""\" width="164" style="max-width:290px;height:auto;aspect-ratio:0.7;overflow:hidden; padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage">
+                                        <img align="center" alt="" src="https://stoughtonhistory.com/lclapp.jpg" width="164" style="max-width:290px;height:auto;aspect-ratio:0.7;overflow:hidden; padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage">
                                     
                                 
                             </td>
@@ -993,7 +996,9 @@ def gethtml(data):
                         
                         <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
                         
-                            """+desc[7]+"""
+                            
+
+The Lucius Clapp Memorial in Boston is a stunning landmark that stands out amongst the city's many historical attractions. Located around 53 minutes away from the airport, this memorial is a must-see destination for any traveler. The memorial honors the life
                         </td>
                     </tr>
                 </tbody></table>
@@ -1046,7 +1051,7 @@ def gethtml(data):
                             <td class="mcnImageContent" valign="top" style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0; text-align:center;">
                                 
                                     
-                                        <img align="center" alt="" src=\""""+imgs[4]+"""\" width="567" style="max-width:500px;height: 250px; object-fit: cover; padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage">
+                                        <img align="center" alt="" src="https://i.ibb.co/16b6k8Q/03cde3b9438b.png" width="567" style="max-width:500px;height: 250px; object-fit: cover; padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage">
                                     
                                 
                             </td>
@@ -1084,7 +1089,9 @@ def gethtml(data):
                         <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
                         
                             <h3>Special Offer</h3>
-                            <p style="font-size:70%;">"""+desc[8]+"""</p>
+                            <p style="font-size:70%;">
+
+American Airlines is currently offering an awesome ongoing deal that is sure to please travelers. With this deal, customers can save up to 25% off select flights when they book their tickets at least 21 days in advance. This deal is available on flights within the United States, Canada, Mexico, the Caribbean, and Central America. Customers can also save up to 10% off select flights when they book their tickets at least 14 days in advance. This deal is available on flights within the United States,</p>
                         </td>
                     </tr>
                 </tbody></table>
@@ -1108,7 +1115,7 @@ def gethtml(data):
                             <td class="mcnImageContent" valign="top" style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0; text-align:center;">
                                 
                                     
-                                        <img align="center" alt="Broken Woman Mural" src=\""""+imgs[6]+"""\" width="264" style="max-width:400px; padding-bottom: 0;aspect-ratio:1; display: inline !important; vertical-align: bottom;" class="mcnImage">
+                                        <img align="center" alt="Broken Woman Mural" src="https://img.atlasobscura.com/ZJvYh8qHNDVCxasK06mGwpDOfKqDhf8qIlVLW4ueYMY/rs:fill:580:580:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy9lNTli/NjI0ODk0MWYxYzc5/ZGFfQnVua2VyX0hp/bGwuanBn.jpg" width="264" style="max-width:400px; padding-bottom: 0;aspect-ratio:1; display: inline !important; vertical-align: bottom;" class="mcnImage">
                                     
                                 
                             </td>
@@ -1126,7 +1133,7 @@ def gethtml(data):
                             <td class="mcnImageContent" valign="top" style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0; text-align:center;">
                                 
                                     
-                                        <img align="center" alt="Wise Primate Mural" src=\""""+imgs[5]+"""\" width="264" style="max-width:400px; aspect-ratio:1.35;padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage">
+                                        <img align="center" alt="Wise Primate Mural" src="https://i.ibb.co/XD418fN/58f05075b883.png" width="264" style="max-width:400px; aspect-ratio:1.35;padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage">
                                     
                                 
                             </td>
@@ -1144,7 +1151,7 @@ def gethtml(data):
                             <td class="mcnImageContent" valign="top" style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0; text-align:center;">
                                 
                                     
-                                        <img align="center" alt="Abstract Shapes Mural" src=\""""+imgs[8]+"""\" width="264" style="max-width:400px; aspect-ratio:1;padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage">
+                                        <img align="center" alt="Abstract Shapes Mural" src="https://images.findagrave.com/photos250/photos/2016/286/138359749_1476390600.jpg" width="264" style="max-width:400px; aspect-ratio:1;padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage">
                                     
                                 
                             </td>
@@ -1199,17 +1206,17 @@ def gethtml(data):
                             <table border="0" cellspacing="0" class="mcnTextContentContainer" width="100%" style="min-width: 100% !important;background-color: #404040;">
                                 <tbody><tr>
                                     <td valign="top" class="mcnTextContent" style="padding: 18px;color: #F2F2F2;font-family: Helvetica;font-size: 14px;font-weight: normal;text-align: center;">
-                                        <div style="text-align: left;"><strong>"""+desc[2][0]+""" ("""+desc[2][5]+""" - &gt; """+desc[2][6]+""")</strong><br>
-Price:&nbsp;"""+desc[2][1]+""" &nbsp; &nbsp; Duration:&nbsp;"""+desc[2][2]+"""<br>
-Aircraft:&nbsp;"""+desc[2][3]+""" &nbsp;Time:&nbsp;"""+desc[2][4]+"""<br>
+                                        <div style="text-align: left;"><strong>SPIRIT AIRLINES (IAH - &gt; FLL)</strong><br>
+Price:&nbsp;80.83 &nbsp; &nbsp; Duration:&nbsp;2H25M<br>
+Aircraft:&nbsp;AIRBUS A321 (SHARKLETS) &nbsp;Time:&nbsp;2023-02-15T22:10:00<br>
 <br>
-<strong>"""+desc[3][0]+""" ("""+desc[3][5]+""" - &gt; """+desc[3][6]+""")</strong><br>
-Price:&nbsp;"""+desc[3][1]+""" &nbsp; &nbsp; Duration:&nbsp;"""+desc[3][2]+"""<br>
-Aircraft:&nbsp;"""+desc[3][3]+""" &nbsp;Time:&nbsp;"""+desc[3][4]+"""<br>
+<strong>SPIRIT AIRLINES (IAH - &gt; FLL)</strong><br>
+Price:&nbsp;80.83 &nbsp; &nbsp; Duration:&nbsp;2H25M<br>
+Aircraft:&nbsp;AIRBUS A320NEO &nbsp;Time:&nbsp;2023-02-15T08:55:00<br>
 <br>
-<strong>"""+desc[4][0]+""" ("""+desc[4][5]+""" - &gt; """+desc[4][6]+""")</strong><br>
-Price:&nbsp;"""+desc[4][1]+""" &nbsp; &nbsp; Duration:&nbsp;"""+desc[4][2]+"""<br>
-Aircraft:&nbsp;"""+desc[4][3]+""" &nbsp;Time:&nbsp;"""+desc[4][4]+"""</div>
+<strong>SPIRIT AIRLINES (IAH - &gt; FLL)</strong><br>
+Price:&nbsp;80.83 &nbsp; &nbsp; Duration:&nbsp;2H25M<br>
+Aircraft:&nbsp;AIRBUS A320NEO &nbsp;Time:&nbsp;2023-02-15T08:55:00</div>
 
                                     </td>
                                 </tr>
@@ -1236,7 +1243,7 @@ Aircraft:&nbsp;"""+desc[4][3]+""" &nbsp;Time:&nbsp;"""+desc[4][4]+"""</div>
                     <tbody>
                         <tr>
                             <td align="center" valign="middle" class="mcnButtonContent" style="font-family: Arial; font-size: 16px; padding: 18px;">
-                                <a class="mcnButton " title="Buy Now" href="https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:"""+data['loc']+""",to:"""+data['des']+""",departure:"""+data['m']+"""/"""+data['d']+"""/"""+data['y']+"""TANYT&passengers=adults:1,children:0,seniors:0,infantinlap:Y&options=cabinclass%3Aeconomy&mode=search&origref=www.expedia.com" target="_blank" style="font-weight: bold;letter-spacing: normal;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;">Buy Now</a>
+                                <a class="mcnButton " title="Buy Now" href="https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:IAH,to:BOS,departure:02/15/2023TANYT&passengers=adults:1,children:0,seniors:0,infantinlap:Y&options=cabinclass%3Aeconomy&mode=search&origref=www.expedia.com" target="_blank" style="font-weight: bold;letter-spacing: normal;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;">Buy Now</a>
                             </td>
                         </tr>
                     </tbody>
@@ -1280,7 +1287,9 @@ Aircraft:&nbsp;"""+desc[4][3]+""" &nbsp;Time:&nbsp;"""+desc[4][4]+"""</div>
                         <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
                         
                             <h3>Travel Info</h3>
-                            <p style="font-size:70%;">"""+desc[9]+"""</p>
+                            <p style="font-size:70%;">
+
+Boston is the capital and most populous city of the Commonwealth of Massachusetts in the United States. It is the largest city in New England and the 24th most populous city in the United States. The city is the economic and cultural anchor of a substantially larger metropolitan area known as Greater Boston, a metropolitan statistical area (MSA) home to a census-estimated 4.8 million people in 2016 and ranking as the tenth-largest such area in the country. The city is the county seat</p>
                         </td>
                     </tr>
                 </tbody></table>
@@ -1304,7 +1313,7 @@ Aircraft:&nbsp;"""+desc[4][3]+""" &nbsp;Time:&nbsp;"""+desc[4][4]+"""</div>
                             <td class="mcnImageContent" valign="top" style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0; text-align:center;">
                                 
                                     
-                                        <img align="center" alt="Xray Saint Mural" src=\""""+imgs[7]+"""\" width="264" style="max-width:400px; aspect-ratio:1;padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage">
+                                        <img align="center" alt="Xray Saint Mural" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/BostonMA_PartingWaysStone.jpg/640px-BostonMA_PartingWaysStone.jpg" width="264" style="max-width:400px; aspect-ratio:1;padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage">
                                     
                                 
                             </td>
@@ -1422,4 +1431,3 @@ Aircraft:&nbsp;"""+desc[4][3]+""" &nbsp;Time:&nbsp;"""+desc[4][4]+"""</div>
     <script type="text/javascript"  src="/r6CZmQP-dp4SO/SqWC9XS/dVKTXa4/iVi5D6Sc7G/MClz/TG0UX/y9rAS0"></script></body>
 </html>
 
-"""

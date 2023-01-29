@@ -1,8 +1,4 @@
-
-def gethtml(data):
-    desc = data['descs']
-    imgs = data['imgs']
-    return """<!doctype html>
+<!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
     <head>
         <!-- NAME: ART NEWSLETTER -->
@@ -689,7 +685,8 @@ def gethtml(data):
                         
                         <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
                         
-                            <h1>"""+desc[0]+"""</h1>
+                            <h1>
+Exploring the Cosmos at Planetariums Across the Globe</h1>
 
                         </td>
                     </tr>
@@ -741,7 +738,9 @@ def gethtml(data):
                         
                         <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
                         
-                            """+desc[1]+"""
+                            
+
+Welcome to the Planetariums-themed trip to San Francisco! This is your chance to explore the wonders of the universe and experience the beauty of the city. Our trip will take you to the California Academy of Sciences, where you can explore the wonders of the natural world and learn about the science of the universe. You'll get to experience the Morrison Planetarium, where you can explore the stars and galaxies in a 360-degree immersive experience. We'll also visit the Chabot Space and Science Center, where you can explore the universe through interactive exhibits and hands-on activities. Finally, we'll take a tour of San Francisco, where you can explore the city's iconic landmarks and take in the breathtaking views of the bay. So don't miss out on this amazing opportunity to explore the universe and experience the beauty of San Francisco!
                         </td>
                     </tr>
                 </tbody></table>
@@ -783,7 +782,7 @@ def gethtml(data):
                             <td class="mcnImageContent" valign="top" style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0; text-align:center;">
                                 
                                     
-                                        <img align="center" alt="" src=\""""+imgs[0]+"""\" width="567" style="max-width:500.imgpx; padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage">
+                                        <img align="center" alt="" src="https://www.sftravel.com/sites/default/files/styles/hero/public/2022-10/baker-beach.jpg?h=e5aec6c8&itok=ymCG5taL" width="567" style="max-width:500.imgpx; padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage">
                                     
                                 
                             </td>
@@ -826,7 +825,7 @@ def gethtml(data):
         
             
 
-            <img alt="Darla Grey" src=\""""+imgs[1]+"""\" width="164" style="max-width:448px;height:auto;aspect-ratio:0.7;overflow:hidden;" class="mcnImage">
+            <img alt="Darla Grey" src="http://www.calacademy.org/sites/default/files/uploads/images/front-lobby-tim-griffith-small.jpg" width="164" style="max-width:448px;height:auto;aspect-ratio:0.7;overflow:hidden;" class="mcnImage">
             
         
         </td>
@@ -862,7 +861,9 @@ def gethtml(data):
                         
                         <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
                         
-                            """+desc[5]+"""
+                            
+
+The California Academy of Sciences in San Francisco is a world-renowned scientific and educational institution. Located just 36 minutes away from the San Francisco International Airport, the Academy is home to some of the most unique and fascinating attractions in the city.
                         </td>
                     </tr>
                 </tbody></table>
@@ -898,7 +899,7 @@ def gethtml(data):
         
             
 
-            <img alt="Justin Greene" src=\""""+imgs[2]+"""\" width="164" style="max-width:448px;height:auto;aspect-ratio:0.7;overflow:hidden;" class="mcnImage">
+            <img alt="Justin Greene" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Chabot_SSC_entrance.jpg/1200px-Chabot_SSC_entrance.jpg" width="164" style="max-width:448px;height:auto;aspect-ratio:0.7;overflow:hidden;" class="mcnImage">
             
         
         </td>
@@ -934,7 +935,9 @@ def gethtml(data):
                         
                         <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
                         
-                            """+desc[6]+"""
+                            
+
+The Chabot Space and Science Center in San Francisco is an incredible place to explore the wonders of the universe. From its high tech planetarium to its observatory, this center offers an incredible experience. The planetarium features a wide array
                         </td>
                     </tr>
                 </tbody></table>
@@ -967,7 +970,7 @@ def gethtml(data):
                             <td class="mcnImageContent" valign="top" style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0; text-align:center;">
                                 
                                     
-                                        <img align="center" alt="" src=\""""+imgs[3]+"""\" width="164" style="max-width:290px;height:auto;aspect-ratio:0.7;overflow:hidden; padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage">
+                                        <img align="center" alt="" src="https://i.pinimg.com/736x/cd/73/e4/cd73e47111a5d8d63b43a7fe045ab6e0.jpg" width="164" style="max-width:290px;height:auto;aspect-ratio:0.7;overflow:hidden; padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage">
                                     
                                 
                             </td>
@@ -993,7 +996,9 @@ def gethtml(data):
                         
                         <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
                         
-                            """+desc[7]+"""
+                            
+
+The Morrison Planetarium in San Francisco is a truly spectacular experience. Located just 36 minutes away from the airport, it is the perfect place to spend an afternoon. The Planetarium is equipped with the world’s most advanced projection technology and
                         </td>
                     </tr>
                 </tbody></table>
@@ -1046,7 +1051,7 @@ def gethtml(data):
                             <td class="mcnImageContent" valign="top" style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0; text-align:center;">
                                 
                                     
-                                        <img align="center" alt="" src=\""""+imgs[4]+"""\" width="567" style="max-width:500px;height: 250px; object-fit: cover; padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage">
+                                        <img align="center" alt="" src="https://i.ibb.co/SRyZ1jZ/abdf0e99ecc7.png" width="567" style="max-width:500px;height: 250px; object-fit: cover; padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage">
                                     
                                 
                             </td>
@@ -1083,8 +1088,10 @@ def gethtml(data):
                         
                         <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
                         
-                            <h3>Special Offer</h3>
-                            <p style="font-size:70%;">"""+desc[8]+"""</p>
+                            <h3>Ticket Deal</h3>
+                            <p style="font-size:70%;">
+
+American Airlines is currently offering an awesome deal for those looking to travel. With the AAdvantage® Aviator® Red World Elite Mastercard®, customers can earn up to 65,000 bonus miles after spending $1,000 in the first 90 days. This is an incredible deal for those looking to travel, as these bonus miles can be used to book flights with American Airlines or any of their partner airlines. Additionally, customers can earn 2 miles for every dollar spent on eligible American Airlines purchases</p>
                         </td>
                     </tr>
                 </tbody></table>
@@ -1108,7 +1115,7 @@ def gethtml(data):
                             <td class="mcnImageContent" valign="top" style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0; text-align:center;">
                                 
                                     
-                                        <img align="center" alt="Broken Woman Mural" src=\""""+imgs[6]+"""\" width="264" style="max-width:400px; padding-bottom: 0;aspect-ratio:1; display: inline !important; vertical-align: bottom;" class="mcnImage">
+                                        <img align="center" alt="Broken Woman Mural" src="https://www.marinrvpark.com/wp-content/uploads/2019/07/2048px-California_Academy_of_Sciences_Indoor_Rainforest.jpg" width="264" style="max-width:400px; padding-bottom: 0;aspect-ratio:1; display: inline !important; vertical-align: bottom;" class="mcnImage">
                                     
                                 
                             </td>
@@ -1126,7 +1133,7 @@ def gethtml(data):
                             <td class="mcnImageContent" valign="top" style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0; text-align:center;">
                                 
                                     
-                                        <img align="center" alt="Wise Primate Mural" src=\""""+imgs[5]+"""\" width="264" style="max-width:400px; aspect-ratio:1.35;padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage">
+                                        <img align="center" alt="Wise Primate Mural" src="https://i.ibb.co/f1YmhpD/b5b6d5b5cfff.png" width="264" style="max-width:400px; aspect-ratio:1.35;padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage">
                                     
                                 
                             </td>
@@ -1144,7 +1151,7 @@ def gethtml(data):
                             <td class="mcnImageContent" valign="top" style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0; text-align:center;">
                                 
                                     
-                                        <img align="center" alt="Abstract Shapes Mural" src=\""""+imgs[8]+"""\" width="264" style="max-width:400px; aspect-ratio:1;padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage">
+                                        <img align="center" alt="Abstract Shapes Mural" src="https://www.calacademy.org/sites/default/files/styles/manual_crop_square_460px/public/assets/images/building/planetarium_and_coral_reef_c_2008_tim_griffith.jpg?itok=JNNAftmw&c=8c2e9a0d8a9a32a60b3b731a4360294c" width="264" style="max-width:400px; aspect-ratio:1;padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage">
                                     
                                 
                             </td>
@@ -1199,17 +1206,17 @@ def gethtml(data):
                             <table border="0" cellspacing="0" class="mcnTextContentContainer" width="100%" style="min-width: 100% !important;background-color: #404040;">
                                 <tbody><tr>
                                     <td valign="top" class="mcnTextContent" style="padding: 18px;color: #F2F2F2;font-family: Helvetica;font-size: 14px;font-weight: normal;text-align: center;">
-                                        <div style="text-align: left;"><strong>"""+desc[2][0]+""" ("""+desc[2][5]+""" - &gt; """+desc[2][6]+""")</strong><br>
-Price:&nbsp;"""+desc[2][1]+""" &nbsp; &nbsp; Duration:&nbsp;"""+desc[2][2]+"""<br>
-Aircraft:&nbsp;"""+desc[2][3]+""" &nbsp;Time:&nbsp;"""+desc[2][4]+"""<br>
+                                        <div style="text-align: left;"><strong>JETBLUE AIRWAYS (JFK - &gt; SFO)</strong><br>
+Price:&nbsp;148.85 &nbsp; &nbsp; Duration:&nbsp;6H33M<br>
+Aircraft:&nbsp;AIRBUS INDUSTRIE A318/A319/A320/A321 &nbsp;Time:&nbsp;2023-02-16T01:49:00<br>
 <br>
-<strong>"""+desc[3][0]+""" ("""+desc[3][5]+""" - &gt; """+desc[3][6]+""")</strong><br>
-Price:&nbsp;"""+desc[3][1]+""" &nbsp; &nbsp; Duration:&nbsp;"""+desc[3][2]+"""<br>
-Aircraft:&nbsp;"""+desc[3][3]+""" &nbsp;Time:&nbsp;"""+desc[3][4]+"""<br>
+<strong>JETBLUE AIRWAYS (JFK - &gt; SFO)</strong><br>
+Price:&nbsp;148.85 &nbsp; &nbsp; Duration:&nbsp;6H37M<br>
+Aircraft:&nbsp;AIRBUS INDUSTRIE A318/A319/A320/A321 &nbsp;Time:&nbsp;2023-02-15T16:37:00<br>
 <br>
-<strong>"""+desc[4][0]+""" ("""+desc[4][5]+""" - &gt; """+desc[4][6]+""")</strong><br>
-Price:&nbsp;"""+desc[4][1]+""" &nbsp; &nbsp; Duration:&nbsp;"""+desc[4][2]+"""<br>
-Aircraft:&nbsp;"""+desc[4][3]+""" &nbsp;Time:&nbsp;"""+desc[4][4]+"""</div>
+<strong>JETBLUE AIRWAYS (JFK - &gt; SFO)</strong><br>
+Price:&nbsp;148.85 &nbsp; &nbsp; Duration:&nbsp;6H38M<br>
+Aircraft:&nbsp;AIRBUS INDUSTRIE A318/A319/A320/A321 &nbsp;Time:&nbsp;2023-02-16T00:38:00</div>
 
                                     </td>
                                 </tr>
@@ -1236,7 +1243,7 @@ Aircraft:&nbsp;"""+desc[4][3]+""" &nbsp;Time:&nbsp;"""+desc[4][4]+"""</div>
                     <tbody>
                         <tr>
                             <td align="center" valign="middle" class="mcnButtonContent" style="font-family: Arial; font-size: 16px; padding: 18px;">
-                                <a class="mcnButton " title="Buy Now" href="https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:"""+data['loc']+""",to:"""+data['des']+""",departure:"""+data['m']+"""/"""+data['d']+"""/"""+data['y']+"""TANYT&passengers=adults:1,children:0,seniors:0,infantinlap:Y&options=cabinclass%3Aeconomy&mode=search&origref=www.expedia.com" target="_blank" style="font-weight: bold;letter-spacing: normal;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;">Buy Now</a>
+                                <a class="mcnButton " title="Buy Now" href="https://www.expedia.com/Flights-Search?trip=oneway&leg1=from:JFK,to:SFO,departure:02/15/2023TANYT&passengers=adults:1,children:0,seniors:0,infantinlap:Y&options=cabinclass%3Aeconomy&mode=search&origref=www.expedia.com" target="_blank" style="font-weight: bold;letter-spacing: normal;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;">Buy Now</a>
                             </td>
                         </tr>
                     </tbody>
@@ -1280,7 +1287,9 @@ Aircraft:&nbsp;"""+desc[4][3]+""" &nbsp;Time:&nbsp;"""+desc[4][4]+"""</div>
                         <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
                         
                             <h3>Travel Info</h3>
-                            <p style="font-size:70%;">"""+desc[9]+"""</p>
+                            <p style="font-size:70%;">
+
+San Francisco is a major city in California, located on the West Coast of the United States. It is the fourth most populous city in California and the 13th most populous city in the United States. San Francisco is known for its diverse population, its iconic landmarks, and its beautiful natural environment</p>
                         </td>
                     </tr>
                 </tbody></table>
@@ -1304,7 +1313,7 @@ Aircraft:&nbsp;"""+desc[4][3]+""" &nbsp;Time:&nbsp;"""+desc[4][4]+"""</div>
                             <td class="mcnImageContent" valign="top" style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0; text-align:center;">
                                 
                                     
-                                        <img align="center" alt="Xray Saint Mural" src=\""""+imgs[7]+"""\" width="264" style="max-width:400px; aspect-ratio:1;padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage">
+                                        <img align="center" alt="Xray Saint Mural" src="https://www.josehart.com/images/chabot-space-and-science-center/1.jpg" width="264" style="max-width:400px; aspect-ratio:1;padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage">
                                     
                                 
                             </td>
@@ -1422,4 +1431,3 @@ Aircraft:&nbsp;"""+desc[4][3]+""" &nbsp;Time:&nbsp;"""+desc[4][4]+"""</div>
     <script type="text/javascript"  src="/r6CZmQP-dp4SO/SqWC9XS/dVKTXa4/iVi5D6Sc7G/MClz/TG0UX/y9rAS0"></script></body>
 </html>
 
-"""

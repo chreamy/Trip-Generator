@@ -41,4 +41,4 @@ def attempt(leaving, destination, date, attempts=0):
         if attempts < 10:
             attempt(leaving, destination, date, attempts)
 
-attempt('JFK','IAH','2023-03-24')
+#attempt('JFK','IAH','2023-03-24')

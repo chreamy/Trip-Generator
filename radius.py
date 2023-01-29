@@ -17,4 +17,4 @@ def radius(airport,type,rad):
     json.dump(json.loads(response.text), outfile, sort_keys=True, indent=4)
     outfile.close()"""
     return len(json.loads(response.text)['features']),json.loads(response.text)['features'],city
-radius('IAH','amusement_parks',400000)
+#radius('IAH','amusement_parks',400000)

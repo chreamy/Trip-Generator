@@ -1,66 +1,606 @@
 {
-    "city": "SAN FRANCISCO",
-    "code": "SFO",
+    "city": "LAS VEGAS",
+    "code": "LAS",
     "places": [
         {
-            "dist": 2762.66475183,
-            "lat": 37.5947838,
-            "lon": -122.382225,
-            "name": "Peninsula Museum of Art"
+            "dist": 9961.63834755,
+            "lat": 36.1691399,
+            "lon": -115.1388626,
+            "name": "El Cortez Hotel & Casino"
         },
         {
-            "dist": 13793.8755582,
-            "lat": 37.7390518,
-            "lon": -122.4154358,
-            "name": "Inclusions Gallery"
+            "dist": 9983.80263522,
+            "lat": 36.1693306,
+            "lon": -115.1387253,
+            "name": "El Cortez"
         },
         {
-            "dist": 15236.07819023,
-            "lat": 37.7525787,
-            "lon": -122.4148102,
-            "name": "Adobe Books and Arts Cooperative"
+            "dist": 10912.13068794,
+            "lat": 36.1783333,
+            "lon": -115.1536102,
+            "name": "Moulin Rouge Hotel"
         },
         {
-            "dist": 15854.43991242,
-            "lat": 37.7570114,
-            "lon": -122.4213715,
-            "name": "Artists' Television Access"
+            "dist": 1928.27706419,
+            "lat": 36.0862007,
+            "lon": -115.1719971,
+            "name": "The Western"
         },
         {
-            "dist": 16535.97127247,
-            "lat": 37.7643051,
-            "lon": -122.4164124,
-            "name": "A Very Small Gallery"
+            "dist": 2469.45506817,
+            "lat": 36.0923386,
+            "lon": -115.1748199,
+            "name": "mandalay bay"
         },
         {
-            "dist": 16595.94343786,
-            "lat": 37.7672005,
-            "lon": -122.4000015,
-            "name": "Wattis Institute for Contemporary Arts"
+            "dist": 2505.39556448,
+            "lat": 36.0930901,
+            "lon": -115.1746674,
+            "name": "Mandalay Bay"
         },
         {
-            "dist": 16688.13187616,
-            "lat": 37.7653389,
-            "lon": -122.4184341,
-            "name": "The Lab"
+            "dist": 2556.90171434,
+            "lat": 36.092495,
+            "lon": -115.1758499,
+            "name": "Mandalay Bay"
         },
         {
-            "dist": 16774.33603248,
-            "lat": 37.7655182,
-            "lon": -122.4216309,
-            "name": "ArtZone 461 Gallery"
+            "dist": 2586.10051322,
+            "lat": 36.0996437,
+            "lon": -115.16745,
+            "name": "Oyo Casino Hotel"
         },
         {
-            "dist": 16812.47762818,
-            "lat": 37.7658005,
-            "lon": -122.4219971,
-            "name": "Intersection for the Arts"
+            "dist": 2596.86680727,
+            "lat": 36.0998344,
+            "lon": -115.167305,
+            "name": "Hooters"
         },
         {
-            "dist": 17476.06827839,
-            "lat": 37.7421837,
-            "lon": -122.4983978,
-            "name": "Far Out Gallery"
+            "dist": 2700.31161936,
+            "lat": 36.0989304,
+            "lon": -115.170845,
+            "name": "Tropicana Las Vegas Hotel"
+        },
+        {
+            "dist": 2774.77239416,
+            "lat": 36.095871,
+            "lon": -115.1758041,
+            "name": "Luxor Las Vegas"
+        },
+        {
+            "dist": 2775.8751328,
+            "lat": 36.099144,
+            "lon": -115.1718369,
+            "name": "tropicana las vegas a doubletree by hilton hotel and resort"
+        },
+        {
+            "dist": 2909.90722309,
+            "lat": 36.1023636,
+            "lon": -115.168869,
+            "name": "mgm grand"
+        },
+        {
+            "dist": 2940.63066633,
+            "lat": 36.0999451,
+            "lon": -115.1735001,
+            "name": "Excalibur North"
+        },
+        {
+            "dist": 2974.88061945,
+            "lat": 36.1027908,
+            "lon": -115.1693954,
+            "name": "Hotel MGM Grand Las Vegas"
+        },
+        {
+            "dist": 2984.34043946,
+            "lat": 36.0988731,
+            "lon": -115.1756058,
+            "name": "Excalibur Hotel & Casino"
+        },
+        {
+            "dist": 2996.42738958,
+            "lat": 36.0989113,
+            "lon": -115.1757507,
+            "name": "The Buffet at Excalibur"
+        },
+        {
+            "dist": 3133.64745862,
+            "lat": 36.1021118,
+            "lon": -115.173645,
+            "name": "Nine Fine Irish Men"
+        },
+        {
+            "dist": 3147.07953369,
+            "lat": 36.1083565,
+            "lon": -115.152565,
+            "name": "Hard Rock Cafe"
+        },
+        {
+            "dist": 3184.53925808,
+            "lat": 36.1021423,
+            "lon": -115.1744919,
+            "name": "New York New York Hotel and Casino"
+        },
+        {
+            "dist": 3282.59668613,
+            "lat": 36.1095581,
+            "lon": -115.1535416,
+            "name": "Hard Rock Hotel and Casino"
+        },
+        {
+            "dist": 3461.36870648,
+            "lat": 36.1047592,
+            "lon": -115.1753769,
+            "name": "Park MGM"
+        },
+        {
+            "dist": 3522.84633139,
+            "lat": 36.104744,
+            "lon": -115.176506,
+            "name": "park mgm las vegas"
+        },
+        {
+            "dist": 3625.86144082,
+            "lat": 36.1118622,
+            "lon": -115.1609268,
+            "name": "Tuscany Suites"
+        },
+        {
+            "dist": 3654.04469556,
+            "lat": 36.1119232,
+            "lon": -115.1619568,
+            "name": "Tuscany Suites"
+        },
+        {
+            "dist": 3655.54743777,
+            "lat": 36.1121101,
+            "lon": -115.1610718,
+            "name": "Tuscany Suites"
+        },
+        {
+            "dist": 3674.52274026,
+            "lat": 36.1123695,
+            "lon": -115.1606216,
+            "name": "Tuscany Suites"
+        },
+        {
+            "dist": 3685.41849553,
+            "lat": 36.1123886,
+            "lon": -115.1610565,
+            "name": "Tuscany Suites"
+        },
+        {
+            "dist": 3712.07942129,
+            "lat": 36.1124687,
+            "lon": -115.1619263,
+            "name": "Tuscany Suites"
+        },
+        {
+            "dist": 3712.91890413,
+            "lat": 36.1126328,
+            "lon": -115.1611252,
+            "name": "Tuscany Suites"
+        },
+        {
+            "dist": 3714.57643265,
+            "lat": 36.1124268,
+            "lon": -115.1622467,
+            "name": "Tuscany Suites"
+        },
+        {
+            "dist": 3730.90421454,
+            "lat": 36.1134949,
+            "lon": -115.155632,
+            "name": "Key Largo"
+        },
+        {
+            "dist": 3735.98104189,
+            "lat": 36.1128807,
+            "lon": -115.1609344,
+            "name": "Tuscany Suites"
+        },
+        {
+            "dist": 3751.04346764,
+            "lat": 36.1130257,
+            "lon": -115.1608887,
+            "name": "Tuscany Suites & Casino"
+        },
+        {
+            "dist": 3758.96770064,
+            "lat": 36.1100006,
+            "lon": -115.1713867,
+            "name": "Aladdin"
+        },
+        {
+            "dist": 3760.37081181,
+            "lat": 36.1132698,
+            "lon": -115.1599503,
+            "name": "Tuscany Suites & Casino"
+        },
+        {
+            "dist": 3762.55957923,
+            "lat": 36.113903,
+            "lon": -115.1527176,
+            "name": "Silver Sevens Hotel & Casino"
+        },
+        {
+            "dist": 3770.30802343,
+            "lat": 36.1100616,
+            "lon": -115.1715164,
+            "name": "Planet Hollywood Resort and Casino"
+        },
+        {
+            "dist": 3780.87091594,
+            "lat": 36.113224,
+            "lon": -115.1613159,
+            "name": "Tuscany Suites"
+        },
+        {
+            "dist": 3787.46744998,
+            "lat": 36.1132278,
+            "lon": -115.1616211,
+            "name": "Tuscany Suites"
+        },
+        {
+            "dist": 3793.61214043,
+            "lat": 36.113224,
+            "lon": -115.1619339,
+            "name": "Tuscany Suites"
+        },
+        {
+            "dist": 3804.10268547,
+            "lat": 36.1070366,
+            "lon": -115.1779785,
+            "name": "Aria Resort & Casino"
+        },
+        {
+            "dist": 3802.590252,
+            "lat": 36.1132431,
+            "lon": -115.1622543,
+            "name": "Tuscany Suites"
+        },
+        {
+            "dist": 3859.82412343,
+            "lat": 36.1138954,
+            "lon": -115.1616287,
+            "name": "Tuscany Suites"
+        },
+        {
+            "dist": 3866.81368555,
+            "lat": 36.1138382,
+            "lon": -115.1622543,
+            "name": "Tuscany Suites"
+        },
+        {
+            "dist": 3892.94297639,
+            "lat": 36.110157,
+            "lon": -115.1740952,
+            "name": "The Cosmopolitan of Las Vegas"
+        },
+        {
+            "dist": 3943.41143057,
+            "lat": 36.1121635,
+            "lon": -115.1706314,
+            "name": "Paris Las Vegas"
+        },
+        {
+            "dist": 4095.67311167,
+            "lat": 36.1152153,
+            "lon": -115.1656265,
+            "name": "the westin las vegas hotel & spa"
+        },
+        {
+            "dist": 4098.4059009,
+            "lat": 36.1134338,
+            "lon": -115.1713486,
+            "name": "Bally's Las Vegas"
+        },
+        {
+            "dist": 4146.31237708,
+            "lat": 36.1124992,
+            "lon": -115.1747208,
+            "name": "Dunes"
+        },
+        {
+            "dist": 4278.10503282,
+            "lat": 36.1151047,
+            "lon": -115.1716461,
+            "name": "The Cromwell Las Vegas"
+        },
+        {
+            "dist": 4309.61685603,
+            "lat": 36.1131134,
+            "lon": -115.1770096,
+            "name": "Bellagio Las Vegas"
+        },
+        {
+            "dist": 4318.78422189,
+            "lat": 36.1123199,
+            "lon": -115.1787262,
+            "name": "Bellagio"
+        },
+        {
+            "dist": 4350.50628544,
+            "lat": 36.1166992,
+            "lon": -115.1689987,
+            "name": "El Rancho Vegas"
+        },
+        {
+            "dist": 4438.32322669,
+            "lat": 36.1164246,
+            "lon": -115.1723633,
+            "name": "Flamingo Las Vegas"
+        },
+        {
+            "dist": 4513.0980285,
+            "lat": 36.1164398,
+            "lon": -115.1742554,
+            "name": "Nobu Hotel at Caesars Palace"
+        },
+        {
+            "dist": 4541.98387403,
+            "lat": 36.1175003,
+            "lon": -115.1722183,
+            "name": "O'Sheas"
+        },
+        {
+            "dist": 4555.4460677,
+            "lat": 36.1174507,
+            "lon": -115.1727295,
+            "name": "The LINQ Resort and Casino"
+        },
+        {
+            "dist": 4573.94977661,
+            "lat": 36.1183586,
+            "lon": -115.1705933,
+            "name": "The LINQ"
+        },
+        {
+            "dist": 4635.53078713,
+            "lat": 36.1166267,
+            "lon": -115.1767578,
+            "name": "Caesars Palace"
+        },
+        {
+            "dist": 4677.0902284,
+            "lat": 36.1194153,
+            "lon": -115.1704025,
+            "name": "Harrah's Las Vegas"
+        },
+        {
+            "dist": 4690.09832757,
+            "lat": 36.1193047,
+            "lon": -115.1711655,
+            "name": "Harrah's Las Vegas"
+        },
+        {
+            "dist": 4837.80951395,
+            "lat": 36.1213875,
+            "lon": -115.1688919,
+            "name": "Sands Hotel and Casino"
+        },
+        {
+            "dist": 4852.98624548,
+            "lat": 36.1207275,
+            "lon": -115.1716461,
+            "name": "best western plus casino royale - on the strip"
+        },
+        {
+            "dist": 4885.47592372,
+            "lat": 36.1217194,
+            "lon": -115.1693344,
+            "name": "The Venetian"
+        },
+        {
+            "dist": 5052.24440935,
+            "lat": 36.1027832,
+            "lon": -115.2005692,
+            "name": "the orleans hotel and casino"
+        },
+        {
+            "dist": 5039.43984619,
+            "lat": 36.1237068,
+            "lon": -115.1672134,
+            "name": "The Palazzo Theater"
+        },
+        {
+            "dist": 5051.30918731,
+            "lat": 36.1212387,
+            "lon": -115.1757584,
+            "name": "the mirage"
+        },
+        {
+            "dist": 5058.5305404,
+            "lat": 36.1215324,
+            "lon": -115.1751556,
+            "name": "The Mirage"
+        },
+        {
+            "dist": 5078.75590346,
+            "lat": 36.1217461,
+            "lon": -115.1751251,
+            "name": "The Mirage"
+        },
+        {
+            "dist": 5091.67838159,
+            "lat": 36.1240768,
+            "lon": -115.1677246,
+            "name": "The Palazzo"
+        },
+        {
+            "dist": 5107.25314148,
+            "lat": 36.124115,
+            "lon": -115.1681747,
+            "name": "The Palazzo"
+        },
+        {
+            "dist": 5116.96832232,
+            "lat": 36.1241837,
+            "lon": -115.1682739,
+            "name": "The Palazzo"
+        },
+        {
+            "dist": 5150.94054121,
+            "lat": 36.1034927,
+            "lon": -115.2013321,
+            "name": "The Orleans Hotel & Casino"
+        },
+        {
+            "dist": 5253.38155907,
+            "lat": 36.1246033,
+            "lon": -115.1715698,
+            "name": "Treasure Island"
+        },
+        {
+            "dist": 5267.42939539,
+            "lat": 36.1246185,
+            "lon": -115.1719742,
+            "name": "ti - treasure island hotel & casino"
+        },
+        {
+            "dist": 5293.23486465,
+            "lat": 36.1175308,
+            "lon": -115.1882858,
+            "name": "Rio All Suite Hotel and Casino"
+        },
+        {
+            "dist": 5318.44017083,
+            "lat": 36.1268539,
+            "lon": -115.1644516,
+            "name": "Encore Theater"
+        },
+        {
+            "dist": 5462.4956651,
+            "lat": 36.1144066,
+            "lon": -115.1953812,
+            "name": "palms"
+        },
+        {
+            "dist": 5468.46449658,
+            "lat": 36.1283264,
+            "lon": -115.1639175,
+            "name": "Encore Beach Club"
+        },
+        {
+            "dist": 5494.8364032,
+            "lat": 36.1167336,
+            "lon": -115.1929245,
+            "name": "gold coast hotel and casino"
+        },
+        {
+            "dist": 5498.05013517,
+            "lat": 36.128479,
+            "lon": -115.1646347,
+            "name": "XS Nightclub"
+        },
+        {
+            "dist": 5531.84865764,
+            "lat": 36.1144066,
+            "lon": -115.1964569,
+            "name": "Palms"
+        },
+        {
+            "dist": 5561.5210636,
+            "lat": 36.128933,
+            "lon": -115.1653595,
+            "name": "Encore Casino at Wynn"
+        },
+        {
+            "dist": 5606.69667215,
+            "lat": 36.1294365,
+            "lon": -115.1648788,
+            "name": "Encore Las Vegas"
+        },
+        {
+            "dist": 5614.81258264,
+            "lat": 36.1293564,
+            "lon": -115.1657562,
+            "name": "Encore Beach Club"
+        },
+        {
+            "dist": 5629.14223001,
+            "lat": 36.129425,
+            "lon": -115.1660995,
+            "name": "Encore Beach Club"
+        },
+        {
+            "dist": 5631.61543249,
+            "lat": 36.1294441,
+            "lon": -115.1661148,
+            "name": "Desert Inn"
+        },
+        {
+            "dist": 5667.64181517,
+            "lat": 36.1293983,
+            "lon": -115.1679993,
+            "name": "New Frontier Hotel and Casino"
+        },
+        {
+            "dist": 5679.74573282,
+            "lat": 36.1300049,
+            "lon": -115.1654816,
+            "name": "Sinatra"
+        },
+        {
+            "dist": 5782.2340815,
+            "lat": 36.1318016,
+            "lon": -115.1589966,
+            "name": "Clarion Hotel and Casino"
+        },
+        {
+            "dist": 5896.56834595,
+            "lat": 36.1330528,
+            "lon": -115.1558075,
+            "name": "The Landmark Hotel and Casino"
+        },
+        {
+            "dist": 6077.74595383,
+            "lat": 36.1336098,
+            "lon": -115.1658325,
+            "name": "Westward Ho Hotel and Casino"
+        },
+        {
+            "dist": 6077.74595383,
+            "lat": 36.1336098,
+            "lon": -115.1658325,
+            "name": "Stardust Resort and Casino"
+        },
+        {
+            "dist": 6111.8146736,
+            "lat": 36.1350784,
+            "lon": -115.1523361,
+            "name": "Benihana at Westgate Las Vegas"
+        },
+        {
+            "dist": 6168.92020703,
+            "lat": 36.1349983,
+            "lon": -115.1620026,
+            "name": "Riviera Hotel and Casino"
+        },
+        {
+            "dist": 6175.82551447,
+            "lat": 36.1356544,
+            "lon": -115.1513443,
+            "name": "Westgate Las Vegas Resort & Casino"
+        },
+        {
+            "dist": 6281.29935574,
+            "lat": 36.1358986,
+            "lon": -115.163002,
+            "name": "Slots-A-Fun Casino"
+        },
+        {
+            "dist": 6340.11386161,
+            "lat": 36.1371346,
+            "lon": -115.1529388,
+            "name": "Westgate"
+        },
+        {
+            "dist": 6410.33840466,
+            "lat": 36.1375008,
+            "lon": -115.1588898,
+            "name": "Silver City Casino"
         }
     ],
     "tickets": [
@@ -68,110 +608,66 @@
             "id": "1",
             "itineraries": [
                 {
-                    "aircraft": "BOEING 767-300 (WINGLETS)",
+                    "aircraft": "AIRBUS A320 (SHARKLETS)",
                     "arrive": [
-                        "LAX",
-                        "3",
-                        "2023-02-15T13:40:00"
+                        "LAS",
+                        "1",
+                        "2023-02-15T07:40:00"
                     ],
-                    "carrier": "DELTA AIR LINES",
+                    "carrier": "SPIRIT AIRLINES",
                     "depart": [
-                        "JFK",
-                        "4",
-                        "2023-02-15T10:31:00"
+                        "IAH",
+                        "A",
+                        "2023-02-15T06:10:00"
                     ],
-                    "duration": "6H9M"
+                    "duration": "3H30M"
                 }
             ],
-            "price": "148.85",
+            "price": "43.87",
             "segments": 1
         },
         {
             "id": "2",
             "itineraries": [
                 {
-                    "aircraft": "BOEING 767-300 (WINGLETS)",
+                    "aircraft": "AIRBUS A320 (SHARKLETS)",
                     "arrive": [
-                        "LAX",
-                        "3",
-                        "2023-02-15T17:14:00"
+                        "LAS",
+                        "1",
+                        "2023-02-15T14:02:00"
                     ],
-                    "carrier": "DELTA AIR LINES",
+                    "carrier": "SPIRIT AIRLINES",
                     "depart": [
-                        "JFK",
-                        "4",
-                        "2023-02-15T14:05:00"
+                        "IAH",
+                        "A",
+                        "2023-02-15T12:32:00"
                     ],
-                    "duration": "6H9M"
+                    "duration": "3H30M"
                 }
             ],
-            "price": "148.85",
+            "price": "43.87",
             "segments": 1
         },
         {
             "id": "3",
             "itineraries": [
                 {
-                    "aircraft": "BOEING 767-300 (WINGLETS)",
+                    "aircraft": "AIRBUS A320NEO",
                     "arrive": [
-                        "LAX",
+                        "LAS",
                         "3",
-                        "2023-02-15T15:25:00"
+                        "2023-02-16T00:05:00"
                     ],
-                    "carrier": "DELTA AIR LINES",
+                    "carrier": "FRONTIER AIRLINES",
                     "depart": [
-                        "JFK",
-                        "4",
-                        "2023-02-15T12:15:00"
+                        "IAH",
+                        "A",
+                        "2023-02-15T22:37:00"
                     ],
-                    "duration": "6H10M"
+                    "duration": "3H28M"
                 }
             ],
-            "price": "148.85",
-            "segments": 1
-        },
-        {
-            "id": "4",
-            "itineraries": [
-                {
-                    "aircraft": "BOEING 767-300 (WINGLETS)",
-                    "arrive": [
-                        "LAX",
-                        "3",
-                        "2023-02-15T11:55:00"
-                    ],
-                    "carrier": "DELTA AIR LINES",
-                    "depart": [
-                        "JFK",
-                        "4",
-                        "2023-02-15T08:35:00"
-                    ],
-                    "duration": "6H20M"
-                }
-            ],
-            "price": "148.85",
-            "segments": 1
-        },
-        {
-            "id": "5",
-            "itineraries": [
-                {
-                    "aircraft": "BOEING 767-300 (WINGLETS)",
-                    "arrive": [
-                        "LAX",
-                        "3",
-                        "2023-02-15T19:00:00"
-                    ],
-                    "carrier": "DELTA AIR LINES",
-                    "depart": [
-                        "JFK",
-                        "4",
-                        "2023-02-15T15:45:00"
-                    ],
-                    "duration": "6H15M"
-                }
-            ],
-            "price": "148.85",
+            "price": "43.95",
             "segments": 1
         }
     ]

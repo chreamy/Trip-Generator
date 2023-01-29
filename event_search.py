@@ -1,5 +1,6 @@
 import ticketpy
 import constants
+import event_images
 tm_client = ticketpy.ApiClient('45LwqqL0VU4G5PGAIsAnYebkwpNRQpGf')
 
 def search(city,subject,start_date,end_date):
@@ -17,9 +18,12 @@ def search(city,subject,start_date,end_date):
         start_date_time=start_date,
         end_date_time=end_date
     )
+    out = []
     for page in pages:
         for event in page:
-            print(event)
+            out+=event_images.screenshot(event.name)
+    print(out[:3])
+    return out[:3]
 def optimal(cities,subject,start_date,end_date):
     '''
 
@@ -49,7 +53,6 @@ def optimal(cities,subject,start_date,end_date):
     return search(cities[index],subject,start_date,end_date)
 
 # Example
-cities = ['Atlanta', 'Houston', 'New York','Los Angeles']
-print(optimal(cities,'sports','2023-02-15T00:00:00Z','2023-02-20T00:00:00Z'))
+#search("Atlanta",'sports','2023-02-15T00:00:00Z','2023-02-20T00:00:00Z')
 
 

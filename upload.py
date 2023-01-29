@@ -6,7 +6,7 @@ import os
 
 def upload(path):
     params = {
-    'expiration': '600',
+    'expiration': '900',
     'key': 'ae2813aa3142a0c191f6bc32f0fbe44a',
     }
 
@@ -15,5 +15,5 @@ def upload(path):
     }
     response = requests.post('https://api.imgbb.com/1/upload', params=params, files=files)
     print(json.loads(response.text)['data']['url'])
-    os.remove(path)
+    #os.remove(path)
     return json.loads(response.text)['data']['url']

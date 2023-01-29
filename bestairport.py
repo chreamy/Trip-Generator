@@ -43,11 +43,12 @@ def getplaces(miles,type,loc,date):
     print(f'best is {max[0]["name"]}')
     max[0]['placeslist'] = sorted(max[0]['placeslist'], key=lambda x: x['properties']['rate'], reverse=True)
     tickets = ticket(loc,max[0]["name"],date)
-    i = 1
+    i =  0
     while tickets==0:
-        tickets = ticket(loc, max[i]["name"], date)
         i+=1
-    out={'code':max[i]["name"], 'city':max[i]['city'],'tickets':tickets,'places':[{'name':place['properties']['name'],'lon':place['geometry']['coordinates'][0],'lat':place['geometry']['coordinates'][1],'dist':place['properties']['dist']} for place in max[i]['placeslist'][:10]]}
+        tickets = ticket(loc, max[i]["name"], date)
+
+    out={'code':max[i]["name"], 'city':max[i]['city'],'tickets':tickets,'places':[{'name':place['properties']['name'],'lon':place['geometry']['coordinates'][0],'lat':place['geometry']['coordinates'][1],'dist':place['properties']['dist']} for place in max[i]['placeslist'][:100]]}
     #json.dump(out, outfile, sort_keys=True,indent=4)
     #outfile.close()
     return out

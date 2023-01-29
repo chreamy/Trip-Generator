@@ -5,6 +5,7 @@ import airport_database
 from selenium import webdriver
 import os
 import time
+import upload
 
 
 def create_map(data):
@@ -30,7 +31,7 @@ def create_map(data):
     airport_tooltip = 'Click For Airport Details'
 
     f = folium.Figure(width=100, height=50)
-    m = folium.Map(location=[start_coordinates[0], start_coordinates[1]],
+    m = folium.Map(location=[(end_coordinates[0]+start_coordinates[0])/2,(end_coordinates[1]+start_coordinates[1])/2],
                    zoom_start=4,
                    min_zoom=4,
                    max_zoom=16).add_to(f)
@@ -80,13 +81,51 @@ def create_map(data):
 
     mapUrl = 'file://{0}/{1}'.format(os.getcwd(), 'map.html')
     driver = webdriver.Chrome()
-
+    m.save('map.html')
     driver.get(mapUrl)
     time.sleep(5)
     driver.save_screenshot('map.png')
     driver.quit()
 
-    m.save('map.html')
+
+    return upload.upload('./map.png')
 
 
 #create_map()
+def create_attraction_map(data):
+    flight_routes = flight_information.load_flight_routes(data)
+    start = flight_routes[0].path[0].dep_IATA
+    start_coordinates = airport_database.lat(start), airport_database.long(start)
+
+    end = flight_routes[0].path[-1].arr_IATA
+    end_coordinates = airport_database.lat(end), airport_database.long(end)
+    global y
+    f = folium.Figure(width=100, height=50)
+    m = folium.Map(location=[end_coordinates[0], end_coordinates[1]],
+                   zoom_start=11,
+                   min_zoom=4,
+                   max_zoom=24).add_to(f)
+
+    attractions = attraction_information.load_attractions()
+
+    for a in attractions:
+
+
+
+        icon = folium.features.CustomIcon('icons/attraction.png', icon_size=(30, 30))
+        folium.Marker(location=[round(a.lat, 3), round(a.long, 3)],
+                      popup=folium.Popup("<b>" + a.name + "</b>"),
+                      icon=icon).add_to(m)
+
+
+    mapUrl = 'file://{0}/{1}'.format(os.getcwd(), 'map2.html')
+    driver = webdriver.Chrome()
+    m.save('map2.html')
+    driver.get(mapUrl)
+    time.sleep(5)
+    driver.save_screenshot('map2.png')
+    driver.quit()
+    return upload.upload('./map2.png')
+
+
+
