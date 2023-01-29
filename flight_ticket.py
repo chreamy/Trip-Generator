@@ -31,8 +31,14 @@ def screenshot(leaving,destination,date):
     num = len(dir_list)
     element.screenshot(rf'images\image{num}.png')
     return upload.upload(rf'images\image{num}.png')
-
+    driver.quit()
 # Example:
+def attempt(leaving, destination, date, attempts=0):
+    attempts +=1
+    try:
+        screenshot(leaving, destination, date)
+    except:
+        if attempts < 10:
+            attempt(leaving, destination, date, attempts)
 
-
-#screenshot('JFK','IAH','2023-03-24')
+attempt('JFK','IAH','2023-03-24')
