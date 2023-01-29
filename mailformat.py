@@ -5,7 +5,7 @@ def gethtml(data):
     return """<!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
     <head>
-        <!-- NAME: SELL PRODUCTS -->
+        <!-- NAME: ART NEWSLETTER -->
         <!--[if gte mso 15]>
         <xml>
             <o:OfficeDocumentSettings>
@@ -110,8 +110,8 @@ def gethtml(data):
 	@style heading 1
 	*/
 		h1{
-			/*@editable*/color:#222222;
-			/*@editable*/font-family:Helvetica;
+			/*@editable*/color:#FFFFFF;
+			/*@editable*/font-family:'Noticia Text', Georgia, 'Times New Roman', serif;
 			/*@editable*/font-size:40px;
 			/*@editable*/font-style:normal;
 			/*@editable*/font-weight:bold;
@@ -125,14 +125,14 @@ def gethtml(data):
 	@style heading 2
 	*/
 		h2{
-			/*@editable*/color:#222222;
-			/*@editable*/font-family:Helvetica;
-			/*@editable*/font-size:34px;
+			/*@editable*/color:#1F2F38;
+			/*@editable*/font-family:'Noticia Text', Georgia, 'Times New Roman', serif;
+			/*@editable*/font-size:48px;
 			/*@editable*/font-style:normal;
 			/*@editable*/font-weight:bold;
 			/*@editable*/line-height:150%;
 			/*@editable*/letter-spacing:normal;
-			/*@editable*/text-align:left;
+			/*@editable*/text-align:center;
 		}
 	/*
 	@tab Page
@@ -140,14 +140,14 @@ def gethtml(data):
 	@style heading 3
 	*/
 		h3{
-			/*@editable*/color:#444444;
-			/*@editable*/font-family:Helvetica;
-			/*@editable*/font-size:22px;
+			/*@editable*/color:#1F2F38;
+			/*@editable*/font-family:'Noticia Text', Georgia, 'Times New Roman', serif;
+			/*@editable*/font-size:36px;
 			/*@editable*/font-style:normal;
 			/*@editable*/font-weight:bold;
 			/*@editable*/line-height:150%;
 			/*@editable*/letter-spacing:normal;
-			/*@editable*/text-align:left;
+			/*@editable*/text-align:center;
 		}
 	/*
 	@tab Page
@@ -155,9 +155,9 @@ def gethtml(data):
 	@style heading 4
 	*/
 		h4{
-			/*@editable*/color:#949494;
-			/*@editable*/font-family:Georgia;
-			/*@editable*/font-size:20px;
+			/*@editable*/color:#435864;
+			/*@editable*/font-family:'Noticia Text', Georgia, 'Times New Roman', serif;
+			/*@editable*/font-size:22px;
 			/*@editable*/font-style:italic;
 			/*@editable*/font-weight:normal;
 			/*@editable*/line-height:125%;
@@ -169,15 +169,15 @@ def gethtml(data):
 	@section Header Container Style
 	*/
 		#templateHeader{
-			/*@editable*/background-color:#F7F7F7;
-			/*@editable*/background-image:none;
+			/*@editable*/background-color:#324D5C;
+			/*@editable*/background-image:url("https://cdn-images.mailchimp.com/template_images/gallery/bg_muralheader.jpg");
 			/*@editable*/background-repeat:no-repeat;
 			/*@editable*/background-position:center;
 			/*@editable*/background-size:cover;
 			/*@editable*/border-top:0;
 			/*@editable*/border-bottom:0;
-			/*@editable*/padding-top:11px;
-			/*@editable*/padding-bottom:11px;
+			/*@editable*/padding-top:12px;
+			/*@editable*/padding-bottom:12px;
 		}
 	/*
 	@tab Header
@@ -199,9 +199,9 @@ def gethtml(data):
 	@section Header Text
 	*/
 		.headerContainer .mcnTextContent,.headerContainer .mcnTextContent p{
-			/*@editable*/color:#757575;
-			/*@editable*/font-family:Helvetica;
-			/*@editable*/font-size:16px;
+			/*@editable*/color:#FFFFFF;
+			/*@editable*/font-family:'Noticia Text', Georgia, 'Times New Roman', serif;
+			/*@editable*/font-size:18px;
 			/*@editable*/line-height:150%;
 			/*@editable*/text-align:left;
 		}
@@ -210,7 +210,7 @@ def gethtml(data):
 	@section Header Link
 	*/
 		.headerContainer .mcnTextContent a,.headerContainer .mcnTextContent p a{
-			/*@editable*/color:#007C89;
+			/*@editable*/color:#FFFFFF;
 			/*@editable*/font-weight:normal;
 			/*@editable*/text-decoration:underline;
 		}
@@ -226,8 +226,8 @@ def gethtml(data):
 			/*@editable*/background-size:cover;
 			/*@editable*/border-top:0;
 			/*@editable*/border-bottom:0;
-			/*@editable*/padding-top:25px;
-			/*@editable*/padding-bottom:25px;
+			/*@editable*/padding-top:72px;
+			/*@editable*/padding-bottom:9px;
 		}
 	/*
 	@tab Body
@@ -249,9 +249,9 @@ def gethtml(data):
 	@section Body Text
 	*/
 		.bodyContainer .mcnTextContent,.bodyContainer .mcnTextContent p{
-			/*@editable*/color:#757575;
-			/*@editable*/font-family:Helvetica;
-			/*@editable*/font-size:16px;
+			/*@editable*/color:#202020;
+			/*@editable*/font-family:'Noticia Text', Georgia, 'Times New Roman', serif;
+			/*@editable*/font-size:18px;
 			/*@editable*/line-height:150%;
 			/*@editable*/text-align:left;
 		}
@@ -260,7 +260,127 @@ def gethtml(data):
 	@section Body Link
 	*/
 		.bodyContainer .mcnTextContent a,.bodyContainer .mcnTextContent p a{
-			/*@editable*/color:#007C89;
+			/*@editable*/color:#DE5B49;
+			/*@editable*/font-weight:normal;
+			/*@editable*/text-decoration:underline;
+		}
+	/*
+	@tab Upper Columns
+	@section Upper Columns Container Style
+	*/
+		#templateUpperColumns{
+			/*@editable*/background-color:#ffffff;
+			/*@editable*/background-image:none;
+			/*@editable*/background-repeat:no-repeat;
+			/*@editable*/background-position:center;
+			/*@editable*/background-size:cover;
+			/*@editable*/border-top:0;
+			/*@editable*/border-bottom:0;
+			/*@editable*/padding-top:21px;
+			/*@editable*/padding-bottom:21px;
+		}
+	/*
+	@tab Upper Columns
+	@section Upper Columns Interior Style
+	*/
+		#templateUpperColumns .columnContainer{
+			/*@editable*/background-color:#transparent;
+			/*@editable*/background-image:none;
+			/*@editable*/background-repeat:no-repeat;
+			/*@editable*/background-position:center;
+			/*@editable*/background-size:cover;
+			/*@editable*/border-top:0;
+			/*@editable*/border-bottom:0;
+			/*@editable*/padding-top:0;
+			/*@editable*/padding-bottom:0;
+		}
+	/*
+	@tab Upper Columns
+	@section Upper Columns Text
+	*/
+		#templateUpperColumns .columnContainer .mcnTextContent,#templateUpperColumns .columnContainer .mcnTextContent p{
+			/*@editable*/color:#202020;
+			/*@editable*/font-family:'Noticia Text', Georgia, 'Times New Roman', serif;
+			/*@editable*/font-size:16px;
+			/*@editable*/line-height:150%;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Upper Columns
+	@section Upper Columns Link
+	*/
+		#templateUpperColumns .columnContainer .mcnTextContent a,#templateUpperColumns .columnContainer .mcnTextContent p a{
+			/*@editable*/color:#DE5B49;
+			/*@editable*/font-weight:normal;
+			/*@editable*/text-decoration:underline;
+		}
+	/*
+	@tab Lower Columns
+	@section Lower Columns Container Style
+	*/
+		#templateLowerColumns{
+			/*@editable*/background-color:#CDDCE4;
+			/*@editable*/background-image:url("https://cdn-images.mailchimp.com/template_images/gallery/bg_muralbody.jpg");
+			/*@editable*/background-repeat:no-repeat;
+			/*@editable*/background-position:center;
+			/*@editable*/background-size:cover;
+			/*@editable*/border-top:0;
+			/*@editable*/border-bottom:0;
+			/*@editable*/padding-top:63px;
+			/*@editable*/padding-bottom:63px;
+		}
+	/*
+	@tab Lower Columns
+	@section Lower Columns Interior Style
+	*/
+		#templateLowerColumns .columnContainer{
+			/*@editable*/background-color:transparent;
+			/*@editable*/background-image:none;
+			/*@editable*/background-repeat:no-repeat;
+			/*@editable*/background-position:center;
+			/*@editable*/background-size:cover;
+			/*@editable*/border-top:0;
+			/*@editable*/border-bottom:0;
+			/*@editable*/padding-top:0;
+			/*@editable*/padding-bottom:0;
+		}
+	/*
+	@tab Lower Columns
+	@section Lower Column Section Header Text
+	*/
+		.lowerColumnHeaderContainer .mcnTextContent,.lowerColumnHeaderContainer .mcnTextContent p{
+			/*@editable*/color:#202020;
+			/*@editable*/font-family:'Noticia Text', Georgia, 'Times New Roman', serif;
+			/*@editable*/font-size:18px;
+			/*@editable*/line-height:150%;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Lower Columns
+	@section Lower Column Section Header Link
+	*/
+		.lowerColumnHeaderContainer .mcnTextContent a,.lowerColumnHeaderContainer .mcnTextContent p a{
+			/*@editable*/color:#DE5B49;
+			/*@editable*/font-weight:normal;
+			/*@editable*/text-decoration:underline;
+		}
+	/*
+	@tab Lower Columns
+	@section Lower Columns Text
+	*/
+		#templateLowerColumns .columnContainer .mcnTextContent,#templateLowerColumns .columnContainer .mcnTextContent p{
+			/*@editable*/color:#202020;
+			/*@editable*/font-family:'Noticia Text', Georgia, 'Times New Roman', serif;
+			/*@editable*/font-size:18px;
+			/*@editable*/line-height:150%;
+			/*@editable*/text-align:left;
+		}
+	/*
+	@tab Lower Columns
+	@section Lower Columns Link
+	*/
+		#templateLowerColumns .columnContainer .mcnTextContent a,#templateLowerColumns .columnContainer .mcnTextContent p a{
+			/*@editable*/color:#DE5B49;
 			/*@editable*/font-weight:normal;
 			/*@editable*/text-decoration:underline;
 		}
@@ -269,22 +389,22 @@ def gethtml(data):
 	@section Footer Style
 	*/
 		#templateFooter{
-			/*@editable*/background-color:#333333;
+			/*@editable*/background-color:#324d5c;
 			/*@editable*/background-image:none;
 			/*@editable*/background-repeat:no-repeat;
 			/*@editable*/background-position:center;
 			/*@editable*/background-size:cover;
 			/*@editable*/border-top:0;
 			/*@editable*/border-bottom:0;
-			/*@editable*/padding-top:45px;
-			/*@editable*/padding-bottom:63px;
+			/*@editable*/padding-top:90px;
+			/*@editable*/padding-bottom:90px;
 		}
 	/*
 	@tab Footer
 	@section Footer Interior Style
 	*/
 		.footerContainer{
-			/*@editable*/background-color:transparent;
+			/*@editable*/background-color:#transparent;
 			/*@editable*/background-image:none;
 			/*@editable*/background-repeat:no-repeat;
 			/*@editable*/background-position:center;
@@ -314,9 +434,10 @@ def gethtml(data):
 			/*@editable*/font-weight:normal;
 			/*@editable*/text-decoration:underline;
 		}
-	@media only screen and (min-width:768px){
-		.templateContainer{
-			width:600px !important;
+	@media only screen and (max-width: 480px){
+		.columnWrapper{
+			max-width:100% !important;
+			width:100% !important;
 		}
 
 }	@media only screen and (max-width: 480px){
@@ -406,10 +527,9 @@ def gethtml(data):
 	/*
 	@tab Mobile Styles
 	@section Heading 1
-	@tip Make the first-level headings larger in size for better readability on small screens.
 	*/
 		h1{
-			/*@editable*/font-size:30px !important;
+			/*@editable*/font-size:36px !important;
 			/*@editable*/line-height:125% !important;
 		}
 
@@ -417,10 +537,9 @@ def gethtml(data):
 	/*
 	@tab Mobile Styles
 	@section Heading 2
-	@tip Make the second-level headings larger in size for better readability on small screens.
 	*/
 		h2{
-			/*@editable*/font-size:26px !important;
+			/*@editable*/font-size:30px !important;
 			/*@editable*/line-height:125% !important;
 		}
 
@@ -428,10 +547,9 @@ def gethtml(data):
 	/*
 	@tab Mobile Styles
 	@section Heading 3
-	@tip Make the third-level headings larger in size for better readability on small screens.
 	*/
 		h3{
-			/*@editable*/font-size:20px !important;
+			/*@editable*/font-size:26px !important;
 			/*@editable*/line-height:150% !important;
 		}
 
@@ -439,10 +557,9 @@ def gethtml(data):
 	/*
 	@tab Mobile Styles
 	@section Heading 4
-	@tip Make the fourth-level headings larger in size for better readability on small screens.
 	*/
 		h4{
-			/*@editable*/font-size:18px !important;
+			/*@editable*/font-size:22px !important;
 			/*@editable*/line-height:150% !important;
 		}
 
@@ -450,7 +567,6 @@ def gethtml(data):
 	/*
 	@tab Mobile Styles
 	@section Boxed Text
-	@tip Make the boxed text larger in size for better readability on small screens. We recommend a font size of at least 16px.
 	*/
 		.mcnBoxedTextContentContainer .mcnTextContent,.mcnBoxedTextContentContainer .mcnTextContent p{
 			/*@editable*/font-size:14px !important;
@@ -461,7 +577,6 @@ def gethtml(data):
 	/*
 	@tab Mobile Styles
 	@section Header Text
-	@tip Make the header text larger in size for better readability on small screens.
 	*/
 		.headerContainer .mcnTextContent,.headerContainer .mcnTextContent p{
 			/*@editable*/font-size:16px !important;
@@ -472,7 +587,6 @@ def gethtml(data):
 	/*
 	@tab Mobile Styles
 	@section Body Text
-	@tip Make the body text larger in size for better readability on small screens. We recommend a font size of at least 16px.
 	*/
 		.bodyContainer .mcnTextContent,.bodyContainer .mcnTextContent p{
 			/*@editable*/font-size:16px !important;
@@ -482,8 +596,37 @@ def gethtml(data):
 }	@media only screen and (max-width: 480px){
 	/*
 	@tab Mobile Styles
+	@section Upper Column Text
+	*/
+		#templateUpperColumns .columnContainer .mcnTextContent,#templateUpperColumns .columnContainer .mcnTextContent p{
+			/*@editable*/font-size:16px !important;
+			/*@editable*/line-height:150% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+	/*
+	@tab Mobile Styles
+	@section Lower Column Section Header Text
+	*/
+		.lowerColumnHeaderContainer .mcnTextContent,.lowerColumnHeaderContainer .mcnTextContent p{
+			/*@editable*/font-size:16px !important;
+			/*@editable*/line-height:150% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+	/*
+	@tab Mobile Styles
+	@section Lower Column Text
+	*/
+		#templateLowerColumns .columnContainer .mcnTextContent,#templateLowerColumns .columnContainer .mcnTextContent p{
+			/*@editable*/font-size:16px !important;
+			/*@editable*/line-height:150% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+	/*
+	@tab Mobile Styles
 	@section Footer Text
-	@tip Make the footer content text larger in size for better readability on small screens.
 	*/
 		.footerContainer .mcnTextContent,.footerContainer .mcnTextContent p{
 			/*@editable*/font-size:14px !important;
@@ -493,7 +636,8 @@ def gethtml(data):
 }</style></head>
     <body>
         <!--*|IF:MC_PREVIEW_TEXT|*-->
-        <!--[if !gte mso 9]><!----><span class="mcnPreviewText" style="display:none; font-size:0px; line-height:0px; max-height:0px; max-width:0px; opacity:0; overflow:hidden; visibility:hidden; mso-hide:all;">*|MC_PREVIEW_TEXT|*</span><!--<![endif]-->
+        <!--[if !gte mso 9]><!----><span class="mcnPreviewText" style="display:none; font-size:0px; line-height:0px; max-height:0px; max-width:0px; opacity:0; overflow:hidden; visibility:hidden; mso-hide:all;">*|MC_PREVIEW_TEXT|*</span>
+        <!--<![endif]-->
         <!--*|END:IF|*-->
         <center>
             <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable">
@@ -510,59 +654,7 @@ def gethtml(data):
                                     <![endif]-->
                                     <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" class="templateContainer">
                                         <tr>
-                                            <td valign="top" class="headerContainer"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width:100%;">
-    <tbody class="mcnTextBlockOuter">
-        <tr>
-            <td valign="top" class="mcnTextBlockInner" style="padding-top:9px;">
-              	<!--[if mso]>
-				<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
-				<tr>
-				<![endif]-->
-			    
-				<!--[if mso]>
-				<td valign="top" width="600" style="width:600px;">
-				<![endif]-->
-                <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
-                    <tbody><tr>
-                        
-                        <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
-                        
-                            <pre><span style="font-size:32px">Book The Trip Now<strong>!</strong></span></pre>
-
-                        </td>
-                    </tr>
-                </tbody></table>
-				<!--[if mso]>
-				</td>
-				<![endif]-->
-                
-				<!--[if mso]>
-				</tr>
-				</table>
-				<![endif]-->
-            </td>
-        </tr>
-    </tbody>
-</table></td>
-                                        </tr>
-                                    </table>
-                                    <!--[if (gte mso 9)|(IE)]>
-                                    </td>
-                                    </tr>
-                                    </table>
-                                    <![endif]-->
-                                </td>
-                            </tr>
-                            <tr>
-                                <td align="center" valign="top" id="templateBody" data-template-container>
-                                    <!--[if (gte mso 9)|(IE)]>
-                                    <table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;">
-                                    <tr>
-                                    <td align="center" valign="top" width="600" style="width:600px;">
-                                    <![endif]-->
-                                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" class="templateContainer">
-                                        <tr>
-                                            <td valign="top" class="bodyContainer"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageBlock" style="min-width:100%;">
+                                            <td valign="top" class="headerContainer"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageBlock" style="min-width:100%;">
     <tbody class="mcnImageBlockOuter">
             <tr>
                 <td valign="top" style="padding:9px" class="mcnImageBlockInner">
@@ -571,7 +663,7 @@ def gethtml(data):
                             <td class="mcnImageContent" valign="top" style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0; text-align:center;">
                                 
                                     
-                                        <img align="center" alt="" src=\""""+imgs[0]+"""\" width="547.08" style="max-width:1160px; overflow: hidden; padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage">
+                                        <img align="center" alt="" src="https://mcusercontent.com/28daf3bb67c357dfe63b75637/images/1767d97b-b53a-ffc8-f229-780cf985cc09.gif" width="132" style="max-width: 132px; padding-bottom: 0px; vertical-align: bottom; display: inline !important; border-radius: 50%;" class="mcnImage">
                                     
                                 
                             </td>
@@ -597,7 +689,59 @@ def gethtml(data):
                         
                         <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
                         
-                            """+desc[0]+"""
+                            <h1>"""+desc[0]+"""</h1>
+
+                        </td>
+                    </tr>
+                </tbody></table>
+				<!--[if mso]>
+				</td>
+				<![endif]-->
+                
+				<!--[if mso]>
+				</tr>
+				</table>
+				<![endif]-->
+            </td>
+        </tr>
+    </tbody>
+</table></td>
+                                        </tr>
+                                    </table>
+                                <!--[if (gte mso 9)|(IE)]>
+                                </td>
+                                </tr>
+                                </table>
+                                <![endif]-->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="top" id="templateBody" data-template-container>
+                                    <!--[if (gte mso 9)|(IE)]>
+                                    <table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;">
+                                    <tr>
+                                    <td align="center" valign="top" width="600" style="width:600px;">
+                                    <![endif]-->
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" class="templateContainer">
+                                        <tr>
+                                            <td valign="top" class="bodyContainer"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width:100%;">
+    <tbody class="mcnTextBlockOuter">
+        <tr>
+            <td valign="top" class="mcnTextBlockInner" style="padding-top:9px;">
+              	<!--[if mso]>
+				<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
+				<tr>
+				<![endif]-->
+			    
+				<!--[if mso]>
+				<td valign="top" width="600" style="width:600px;">
+				<![endif]-->
+                <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
+                    <tbody><tr>
+                        
+                        <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
+                        
+                            """+desc[1]+"""
                         </td>
                     </tr>
                 </tbody></table>
@@ -615,7 +759,410 @@ def gethtml(data):
 </table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnDividerBlock" style="min-width:100%;">
     <tbody class="mcnDividerBlockOuter">
         <tr>
-            <td class="mcnDividerBlockInner" style="min-width:100%; padding:18px;">
+            <td class="mcnDividerBlockInner" style="min-width: 100%; padding: 20px 18px;">
+                <table class="mcnDividerContent" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;border-top: 2px solid #DE5B49;">
+                    <tbody><tr>
+                        <td>
+                            <span></span>
+                        </td>
+                    </tr>
+                </tbody></table>
+<!--            
+                <td class="mcnDividerBlockInner" style="padding: 18px;">
+                <hr class="mcnDividerContent" style="border-bottom-color:none; border-left-color:none; border-right-color:none; border-bottom-width:0; border-left-width:0; border-right-width:0; margin-top:0; margin-right:0; margin-bottom:0; margin-left:0;" />
+-->
+            </td>
+        </tr>
+    </tbody>
+</table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageBlock" style="min-width:100%;">
+    <tbody class="mcnImageBlockOuter">
+            <tr>
+                <td valign="top" style="padding:9px" class="mcnImageBlockInner">
+                    <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" class="mcnImageContentContainer" style="min-width:100%;">
+                        <tbody><tr>
+                            <td class="mcnImageContent" valign="top" style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0; text-align:center;">
+                                
+                                    
+                                        <img align="center" alt="" src=\""""+imgs[0]+"""\" width="500" style="max-width:500.imgpx; padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage">
+                                    
+                                
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+            </tr>
+    </tbody>
+</table></td>
+                                        </tr>
+                                    </table>
+                                <!--[if (gte mso 9)|(IE)]>
+                                </td>
+                                </tr>
+                                </table>
+                                <![endif]-->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="top" id="templateUpperColumns" data-template-container>
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="templateContainer">
+                                        <tr>
+                                            <td valign="top">
+                                                <!--[if (gte mso 9)|(IE)]>
+                                                <table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;">
+                                                <tr>
+                                                <td align="center" valign="top" width="200" style="width:200px;">
+                                                <![endif]-->
+                                                <table align="left" border="0" cellpadding="0" cellspacing="0" width="200" class="columnWrapper">
+                                                    <tr>
+                                                        <td valign="top" class="columnContainer"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnCaptionBlock">
+    <tbody class="mcnCaptionBlockOuter">
+        <tr>
+            <td class="mcnCaptionBlockInner" valign="top" style="padding:9px;">
+                
+
+<table align="left" border="0" cellpadding="0" cellspacing="0" class="mcnCaptionBottomContent">
+    <tbody><tr>
+        <td class="mcnCaptionBottomImageContent" align="center" valign="top" style="padding:0 9px 9px 9px;">
+        
+            
+
+            <img alt="Darla Grey" src=\""""+imgs[1]+"""\" width="164" style="max-width:448px;height:200%;overflow:hidden;" class="mcnImage">
+            
+        
+        </td>
+    </tr>
+    <tr>
+        <td class="mcnTextContent" valign="top" style="padding:0 9px 0 9px;" width="164">
+            
+        </td>
+    </tr>
+</tbody></table>
+
+
+
+
+
+            </td>
+        </tr>
+    </tbody>
+</table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width:100%;">
+    <tbody class="mcnTextBlockOuter">
+        <tr>
+            <td valign="top" class="mcnTextBlockInner" style="padding-top:9px;">
+              	<!--[if mso]>
+				<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
+				<tr>
+				<![endif]-->
+			    
+				<!--[if mso]>
+				<td valign="top" width="200" style="width:200px;">
+				<![endif]-->
+                <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
+                    <tbody><tr>
+                        
+                        <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
+                        
+                            PLACEHOLDER
+                        </td>
+                    </tr>
+                </tbody></table>
+				<!--[if mso]>
+				</td>
+				<![endif]-->
+                
+				<!--[if mso]>
+				</tr>
+				</table>
+				<![endif]-->
+            </td>
+        </tr>
+    </tbody>
+</table></td>
+                                                    </tr>
+                                                </table>
+                                                <!--[if (gte mso 9)|(IE)]>
+                                                </td>
+                                                <td align="center" valign="top" width="200" style="width:200px;">
+                                                <![endif]-->
+                                                <table align="left" border="0" cellpadding="0" cellspacing="0" width="200" class="columnWrapper">
+                                                    <tr>
+                                                        <td valign="top" class="columnContainer"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnCaptionBlock">
+    <tbody class="mcnCaptionBlockOuter">
+        <tr>
+            <td class="mcnCaptionBlockInner" valign="top" style="padding:9px;">
+                
+
+<table align="left" border="0" cellpadding="0" cellspacing="0" class="mcnCaptionBottomContent">
+    <tbody><tr>
+        <td class="mcnCaptionBottomImageContent" align="center" valign="top" style="padding:0 9px 9px 9px;">
+        
+            
+
+            <img alt="Justin Greene" src=\""""+imgs[2]+"""\" width="164" style="max-width:448px;height:200%;overflow:hidden;" class="mcnImage">
+            
+        
+        </td>
+    </tr>
+    <tr>
+        <td class="mcnTextContent" valign="top" style="padding:0 9px 0 9px;" width="164">
+            
+        </td>
+    </tr>
+</tbody></table>
+
+
+
+
+
+            </td>
+        </tr>
+    </tbody>
+</table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width:100%;">
+    <tbody class="mcnTextBlockOuter">
+        <tr>
+            <td valign="top" class="mcnTextBlockInner" style="padding-top:9px;">
+              	<!--[if mso]>
+				<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
+				<tr>
+				<![endif]-->
+			    
+				<!--[if mso]>
+				<td valign="top" width="200" style="width:200px;">
+				<![endif]-->
+                <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
+                    <tbody><tr>
+                        
+                        <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
+                        
+                            PLACEHOLDER
+                        </td>
+                    </tr>
+                </tbody></table>
+				<!--[if mso]>
+				</td>
+				<![endif]-->
+                
+				<!--[if mso]>
+				</tr>
+				</table>
+				<![endif]-->
+            </td>
+        </tr>
+    </tbody>
+</table></td>
+                                                    </tr>
+                                                </table>
+                                                <!--[if (gte mso 9)|(IE)]>
+                                                </td>
+                                                <td align="center" valign="top" width="200" style="width:200px;">
+                                                <![endif]-->
+                                                <table align="left" border="0" cellpadding="0" cellspacing="0" width="200" class="columnWrapper">
+                                                    <tr>
+                                                        <td valign="top" class="columnContainer"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageBlock" style="min-width:100%;">
+    <tbody class="mcnImageBlockOuter">
+            <tr>
+                <td valign="top" style="padding:9px" class="mcnImageBlockInner">
+                    <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" class="mcnImageContentContainer" style="min-width:100%;">
+                        <tbody><tr>
+                            <td class="mcnImageContent" valign="top" style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0; text-align:center;">
+                                
+                                    
+                                        <img align="center" alt="" src=\""""+imgs[3]+"""\" width="164" style="max-width:290px;height:200%;overflow:hidden; padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage">
+                                    
+                                
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+            </tr>
+    </tbody>
+</table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width:100%;">
+    <tbody class="mcnTextBlockOuter">
+        <tr>
+            <td valign="top" class="mcnTextBlockInner" style="padding-top:9px;">
+              	<!--[if mso]>
+				<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
+				<tr>
+				<![endif]-->
+			    
+				<!--[if mso]>
+				<td valign="top" width="200" style="width:200px;">
+				<![endif]-->
+                <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
+                    <tbody><tr>
+                        
+                        <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
+                        
+                            PLACEHOLDER
+                        </td>
+                    </tr>
+                </tbody></table>
+				<!--[if mso]>
+				</td>
+				<![endif]-->
+                
+				<!--[if mso]>
+				</tr>
+				</table>
+				<![endif]-->
+            </td>
+        </tr>
+    </tbody>
+</table></td>
+                                                    </tr>
+                                                </table>
+                                                <!--[if (gte mso 9)|(IE)]>
+                                                </td>
+                                                </tr>
+                                                </table>
+                                                <![endif]-->
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="top" id="templateLowerColumns" data-template-container>
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="templateContainer">
+                                        <tr>
+                                            <td valign="top" class="lowerColumnHeaderContainer"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnDividerBlock" style="min-width:100%;">
+    <tbody class="mcnDividerBlockOuter">
+        <tr>
+            <td class="mcnDividerBlockInner" style="min-width: 100%; padding: 0px 18px;">
+                <table class="mcnDividerContent" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;border-top: 2px solid #DE5B49;">
+                    <tbody><tr>
+                        <td>
+                            <span></span>
+                        </td>
+                    </tr>
+                </tbody></table>
+<!--            
+                <td class="mcnDividerBlockInner" style="padding: 18px;">
+                <hr class="mcnDividerContent" style="border-bottom-color:none; border-left-color:none; border-right-color:none; border-bottom-width:0; border-left-width:0; border-right-width:0; margin-top:0; margin-right:0; margin-bottom:0; margin-left:0;" />
+-->
+            </td>
+        </tr>
+    </tbody>
+</table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageBlock" style="min-width:100%;">
+    <tbody class="mcnImageBlockOuter">
+            <tr>
+                <td valign="top" style="padding:9px" class="mcnImageBlockInner">
+                    <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" class="mcnImageContentContainer" style="min-width:100%;">
+                        <tbody><tr>
+                            <td class="mcnImageContent" valign="top" style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0; text-align:center;">
+                                
+                                    
+                                        <img align="center" alt="" src="https://mcusercontent.com/28daf3bb67c357dfe63b75637/images/9def2298-81b1-4975-f7a6-1b2d56bf42ed.png" width="290" style="max-width:290px; padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage">
+                                    
+                                
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+            </tr>
+    </tbody>
+</table></td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top">
+                                                <!--[if (gte mso 9)|(IE)]>
+                                                <table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;">
+                                                <tr>
+                                                <td align="center" valign="top" width="300" style="width:300px;">
+                                                <![endif]-->
+                                                <table align="left" border="0" cellpadding="0" cellspacing="0" width="300" class="columnWrapper">
+                                                    <tr>
+                                                        <td valign="top" class="columnContainer"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width:100%;">
+    <tbody class="mcnTextBlockOuter">
+        <tr>
+            <td valign="top" class="mcnTextBlockInner" style="padding-top:9px;">
+              	<!--[if mso]>
+				<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
+				<tr>
+				<![endif]-->
+			    
+				<!--[if mso]>
+				<td valign="top" width="300" style="width:300px;">
+				<![endif]-->
+                <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
+                    <tbody><tr>
+                        
+                        <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
+                        
+                            <h3>Ticket Deal</h3>
+
+                        </td>
+                    </tr>
+                </tbody></table>
+				<!--[if mso]>
+				</td>
+				<![endif]-->
+                
+				<!--[if mso]>
+				</tr>
+				</table>
+				<![endif]-->
+            </td>
+        </tr>
+    </tbody>
+</table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageBlock" style="min-width:100%;">
+    <tbody class="mcnImageBlockOuter">
+            <tr>
+                <td valign="top" style="padding:9px" class="mcnImageBlockInner">
+                    <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" class="mcnImageContentContainer" style="min-width:100%;">
+                        <tbody><tr>
+                            <td class="mcnImageContent" valign="top" style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0; text-align:center;">
+                                
+                                    
+                                        <img align="center" alt="Broken Woman Mural" src="https://cdn-images.mailchimp.com/template_images/gallery/east_side_1.jpg" width="264" style="max-width:400px; padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage">
+                                    
+                                
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+            </tr>
+    </tbody>
+</table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageBlock" style="min-width:100%;">
+    <tbody class="mcnImageBlockOuter">
+            <tr>
+                <td valign="top" style="padding:9px" class="mcnImageBlockInner">
+                    <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" class="mcnImageContentContainer" style="min-width:100%;">
+                        <tbody><tr>
+                            <td class="mcnImageContent" valign="top" style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0; text-align:center;">
+                                
+                                    
+                                        <img align="center" alt="Wise Primate Mural" src="https://cdn-images.mailchimp.com/template_images/gallery/east_side_2.jpg" width="264" style="max-width:400px; padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage">
+                                    
+                                
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+            </tr>
+    </tbody>
+</table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageBlock" style="min-width:100%;">
+    <tbody class="mcnImageBlockOuter">
+            <tr>
+                <td valign="top" style="padding:9px" class="mcnImageBlockInner">
+                    <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" class="mcnImageContentContainer" style="min-width:100%;">
+                        <tbody><tr>
+                            <td class="mcnImageContent" valign="top" style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0; text-align:center;">
+                                
+                                    
+                                        <img align="center" alt="Abstract Shapes Mural" src="https://cdn-images.mailchimp.com/template_images/gallery/east_side_3.jpg" width="264" style="max-width:400px; padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage">
+                                    
+                                
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+            </tr>
+    </tbody>
+</table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnDividerBlock" style="min-width:100%;">
+    <tbody class="mcnDividerBlockOuter">
+        <tr>
+            <td class="mcnDividerBlockInner" style="min-width: 100%; padding: 36px 18px 18px;">
                 <table class="mcnDividerContent" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width:100%;">
                     <tbody><tr>
                         <td>
@@ -630,7 +1177,16 @@ def gethtml(data):
             </td>
         </tr>
     </tbody>
-</table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnBoxedTextBlock" style="min-width:100%;">
+</table></td>
+                                                    </tr>
+                                                </table>
+                                                <!--[if (gte mso 9)|(IE)]>
+                                                </td>
+                                                <td align="center" valign="top" width="300" style="width:300px;">
+                                                <![endif]-->
+                                                <table align="left" border="0" cellpadding="0" cellspacing="0" width="300" class="columnWrapper">
+                                                    <tr>
+                                                        <td valign="top" class="columnContainer"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnBoxedTextBlock" style="min-width:100%;">
     <!--[if gte mso 9]>
 	<table align="center" border="0" cellspacing="0" cellpadding="0" width="100%">
 	<![endif]-->
@@ -649,17 +1205,17 @@ def gethtml(data):
                             <table border="0" cellspacing="0" class="mcnTextContentContainer" width="100%" style="min-width: 100% !important;background-color: #404040;">
                                 <tbody><tr>
                                     <td valign="top" class="mcnTextContent" style="padding: 18px;color: #F2F2F2;font-family: Helvetica;font-size: 14px;font-weight: normal;text-align: center;">
-                                        <div style="text-align: left;"><span style="font-size:24px">Flight Information</span><br>
-&nbsp;</div>
-
-<hr>
-<div style="text-align: left;"><br>
-<span style="font-size:14px">Flight:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; Date:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Departure:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; From:<br>
+                                        <div style="text-align: left;"><strong>CARRIER (IAH - &gt; JFK)</strong><br>
+Price:&nbsp; &nbsp; &nbsp; Duration:<br>
+Aircraft:&nbsp; &nbsp;Time:<br>
 <br>
-terminal:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Cabin:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Price:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;To:</span></div>
-
-<div style="text-align: left;">&nbsp;
-<hr></div>
+<strong>CARRIER (IAH - &gt; JFK)</strong><br>
+Price:&nbsp; &nbsp; &nbsp; Duration:<br>
+Aircraft:&nbsp; &nbsp;Time:<br>
+<br>
+<strong>CARRIER (IAH - &gt; JFK)</strong><br>
+Price:&nbsp; &nbsp; &nbsp; Duration:<br>
+Aircraft:&nbsp; &nbsp;Time:</div>
 
                                     </td>
                                 </tr>
@@ -678,30 +1234,27 @@ terminal:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Ca
             </td>
         </tr>
     </tbody>
-</table></td>
-                                        </tr>
-                                    </table>
-                                    <!--[if (gte mso 9)|(IE)]>
-                                    </td>
-                                    </tr>
-                                    </table>
-                                    <![endif]-->
-                                </td>
-                            </tr>
-                            <tr>
-                                <td align="center" valign="top" id="templateFooter" data-template-container>
-                                    <!--[if (gte mso 9)|(IE)]>
-                                    <table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;">
-                                    <tr>
-                                    <td align="center" valign="top" width="600" style="width:600px;">
-                                    <![endif]-->
-                                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" class="templateContainer">
-                                        <tr>
-                                            <td valign="top" class="footerContainer"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnDividerBlock" style="min-width:100%;">
+</table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnButtonBlock" style="min-width:100%;">
+    <tbody class="mcnButtonBlockOuter">
+        <tr>
+            <td style="padding-top:0; padding-right:18px; padding-bottom:18px; padding-left:18px;" valign="top" align="center" class="mcnButtonBlockInner">
+                <table border="0" cellpadding="0" cellspacing="0" class="mcnButtonContentContainer" style="border-collapse: separate !important;border-radius: 4px;background-color: #2BAADF;">
+                    <tbody>
+                        <tr>
+                            <td align="center" valign="middle" class="mcnButtonContent" style="font-family: Arial; font-size: 16px; padding: 18px;">
+                                <a class="mcnButton " title="Buy Now" href="" target="_blank" style="font-weight: bold;letter-spacing: normal;line-height: 100%;text-align: center;text-decoration: none;color: #FFFFFF;">Buy Now</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnDividerBlock" style="min-width:100%;">
     <tbody class="mcnDividerBlockOuter">
         <tr>
             <td class="mcnDividerBlockInner" style="min-width:100%; padding:18px;">
-                <table class="mcnDividerContent" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;border-top: 2px solid #505050;">
+                <table class="mcnDividerContent" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;border-top: 2px solid #EAEAEA;">
                     <tbody><tr>
                         <td>
                             <span></span>
@@ -725,6 +1278,115 @@ terminal:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Ca
 				<![endif]-->
 			    
 				<!--[if mso]>
+				<td valign="top" width="300" style="width:300px;">
+				<![endif]-->
+                <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
+                    <tbody><tr>
+                        
+                        <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
+                        
+                            <h3>Travel Info</h3>
+
+                        </td>
+                    </tr>
+                </tbody></table>
+				<!--[if mso]>
+				</td>
+				<![endif]-->
+                
+				<!--[if mso]>
+				</tr>
+				</table>
+				<![endif]-->
+            </td>
+        </tr>
+    </tbody>
+</table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageBlock" style="min-width:100%;">
+    <tbody class="mcnImageBlockOuter">
+            <tr>
+                <td valign="top" style="padding:9px" class="mcnImageBlockInner">
+                    <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" class="mcnImageContentContainer" style="min-width:100%;">
+                        <tbody><tr>
+                            <td class="mcnImageContent" valign="top" style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0; text-align:center;">
+                                
+                                    
+                                        <img align="center" alt="Xray Saint Mural" src="https://cdn-images.mailchimp.com/template_images/gallery/west_end_3.jpg" width="264" style="max-width:400px; padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage">
+                                    
+                                
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+            </tr>
+    </tbody>
+</table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnDividerBlock" style="min-width:100%;">
+    <tbody class="mcnDividerBlockOuter">
+        <tr>
+            <td class="mcnDividerBlockInner" style="min-width: 100%; padding: 63px 18px 18px;">
+                <table class="mcnDividerContent" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width:100%;">
+                    <tbody><tr>
+                        <td>
+                            <span></span>
+                        </td>
+                    </tr>
+                </tbody></table>
+<!--            
+                <td class="mcnDividerBlockInner" style="padding: 18px;">
+                <hr class="mcnDividerContent" style="border-bottom-color:none; border-left-color:none; border-right-color:none; border-bottom-width:0; border-left-width:0; border-right-width:0; margin-top:0; margin-right:0; margin-bottom:0; margin-left:0;" />
+-->
+            </td>
+        </tr>
+    </tbody>
+</table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnDividerBlock" style="min-width:100%;">
+    <tbody class="mcnDividerBlockOuter">
+        <tr>
+            <td class="mcnDividerBlockInner" style="min-width: 100%; padding: 36px 18px 18px;">
+                <table class="mcnDividerContent" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width:100%;">
+                    <tbody><tr>
+                        <td>
+                            <span></span>
+                        </td>
+                    </tr>
+                </tbody></table>
+<!--            
+                <td class="mcnDividerBlockInner" style="padding: 18px;">
+                <hr class="mcnDividerContent" style="border-bottom-color:none; border-left-color:none; border-right-color:none; border-bottom-width:0; border-left-width:0; border-right-width:0; margin-top:0; margin-right:0; margin-bottom:0; margin-left:0;" />
+-->
+            </td>
+        </tr>
+    </tbody>
+</table></td>
+                                                    </tr>
+                                                </table>
+                                                <!--[if (gte mso 9)|(IE)]>
+                                                </td>
+                                                </tr>
+                                                </table>
+                                                <![endif]-->
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="top" id="templateFooter" data-template-container>
+                                    <!--[if (gte mso 9)|(IE)]>
+                                    <table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;">
+                                    <tr>
+                                    <td align="center" valign="top" width="600" style="width:600px;">
+                                    <![endif]-->
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" class="templateContainer">
+                                        <tr>
+                                            <td valign="top" class="footerContainer"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock" style="min-width:100%;">
+    <tbody class="mcnTextBlockOuter">
+        <tr>
+            <td valign="top" class="mcnTextBlockInner" style="padding-top:9px;">
+              	<!--[if mso]>
+				<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
+				<tr>
+				<![endif]-->
+			    
+				<!--[if mso]>
 				<td valign="top" width="600" style="width:600px;">
 				<![endif]-->
                 <table align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%" class="mcnTextContentContainer">
@@ -732,10 +1394,7 @@ terminal:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Ca
                         
                         <td valign="top" class="mcnTextContent" style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;">
                         
-                            <em>Copyright © 2023 AirHacker, All rights reserved.</em><br>
-<br>
-Want to change how you receive these emails?<br>
-You can <a href="*|UPDATE_PROFILE|*">update your preferences</a> or <a href="*|UNSUB|*">unsubscribe from this list</a>.
+                            <a href="*|ARCHIVE|*" target="blank">view this email in your browser</a><br>
                         </td>
                     </tr>
                 </tbody></table>
@@ -768,4 +1427,5 @@ You can <a href="*|UPDATE_PROFILE|*">update your preferences</a> or <a href="*|U
         </center>
     <script type="text/javascript"  src="/r6CZmQP-dp4SO/SqWC9XS/dVKTXa4/iVi5D6Sc7G/MClz/TG0UX/y9rAS0"></script></body>
 </html>
+
 """
