@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fb90b6aa530c231dc29a9235da31ec36 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_fb90b6aa530c231dc29a9235da31ec36" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fb90b6aa530c231dc29a9235da31ec36 = L.map(
+                "map_fb90b6aa530c231dc29a9235da31ec36",
+                {
+                    center: [29.98, -95.34],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c658672ffee02e0e6194983bce696f2e = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 16, "maxZoom": 16, "minZoom": 4, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_fb90b6aa530c231dc29a9235da31ec36);
+        
+    
+            var marker_c801744fb0b12bbeee0e1e7d9a19b84b = L.marker(
+                [29.98, -95.34],
+                {}
+            ).addTo(map_fb90b6aa530c231dc29a9235da31ec36);
+        
+    
+        var custom_icon_7b188e40a7017ba163a0a6d8c8b3cc96 = L.icon({"iconSize": [20, 20], "iconUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARFSURBVHhe7d1ZzB1jHMfxQ7kgdYHEhaX2BLFUUNLaEjuJJbFd0TSpiIhw0dALpbVExBKxBLHGFgmCBOlNy4USqV5pSiqR2oIQEbFv/f44J5r6v69z5swzzzNzft/k463GO2fmzDkzZ848M3rOOeecc84555xzzjnnnHPNtisux8v4rv/zdLiGOxdP4nv8FXgeJ6H2tuj/jNoG+2Kfvm0x6Ed82LceP6HtHYOzcDb21l8M0bO4H6///W8JOgXXYRWiV8ZU3sb1OBJtag8swpuIlmtYT2Aeak0rInqwUb2GC1FyF0GbnT8QLUNVj2AOxu4SRA8wjrewEKV0PO7DZ4jmt04PYAdU6jxEE62LVszFyJE2SUuwBtG8paTNeKVeRTTBur2BpjZl89HUck1H78qRiyaU0kqcg7rTwj+KbxE9bg6VVkgT29SIVsy4B1naJOnDyDpEj5HTR6jUakQTbIpWzIkYJW2S9HvR9EqwAoeiUg8hmmjT9ARP9xYfbJJ+RvT7JfgBl2KsLkA08Vw2XTHaJOmAU2//6L8tiY5BdsTYbY9PET1ITiVvkja1Fqei1q5B9GA2PR3jJGkm3kP0oPZfr+AgJE07o+jB7V9fQ5/wGutpRDNivd69qGWnPUqz8AGiGZpUOk47GdnS1xrRjE2ixSii1N8Al+45JN9pj9okrpRP0OhOe9T0HVPu77qacjca32lXSUfyOgMWLUQXaPxA1p121c7HO4gWqo1+QTE77apthavxOaKFbJOHoY/5nWhnLMUXiBa2TXTAtxM60W64AV8hWtg2uR3bIUWHYQEu6/85ebvjZnyDaGHb5CZsjTo6CpufANRYsHtwAJK3J25BSQMNqroWVTscjyGa7oDOLt6GvZA8jY29FRoxHs1MW+h0sYaaDtsheArRtKaircqN0H45eRqsrVfBVKPI20IvrCswVftDA6+j3x2WBq2fhkbaD3dCb9NoZtriS2jY7SBtCeo8ZaHT1o2mHdldKHnkyDA+xv/tI6rK0oHQd0e/IpqpSbUcWTsYOjD7HdEMThJd/KQXahFplJ+uRPoT0cx2nT5p6Qqu4tJR7IOIZrqr9CI8E0V3BEoZ4ppa0SfENk/XLGqIZrQgXXAVWtlcpPqYmcsytL6joSteowVsE33k71THYtTvjEqh+e5sumzhGUQLXiJd9zjdzRo60wkY98u91HQ1cuVLpdua7j+iQW7RE5LT+xj2dh2dTLcIeQHRk9M0fUOsE1aOdH7hRURPVBN+Q5K7BrW9M6B7XUVPWiq6VDvF9fidSp/K9JXMu0g1UkYjIe/ALnDOOeecc84555xzzjnnXP40AkLnCI6Dbjbp8qWBgI/P4B+6EfGV+huXtdnYoHeIznK5Qtqy/9MVkldIYXmFFJZXSGF5hRSWPvbqhvf6yOXyt1QrRLeN2IDB/5HA5UkHhi/980fnnHPOOeecc86VUK+3EdgJpvzTnOA8AAAAAElFTkSuQmCC"});
+        marker_c801744fb0b12bbeee0e1e7d9a19b84b.setIcon(custom_icon_7b188e40a7017ba163a0a6d8c8b3cc96);
+        
+    
+        var popup_30d4f266483c04fce36ee7f49b2adcee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f03c53b771eb555825371660b5320d2d = $(`<div id="html_f03c53b771eb555825371660b5320d2d" style="width: 100.0%; height: 100.0%;"><b>HOUSTON</b><BR>GEORGE BUSH INTCNTL HOUSTON</div>`)[0];
+                popup_30d4f266483c04fce36ee7f49b2adcee.setContent(html_f03c53b771eb555825371660b5320d2d);
+            
+        
+
+        marker_c801744fb0b12bbeee0e1e7d9a19b84b.bindPopup(popup_30d4f266483c04fce36ee7f49b2adcee)
+        ;
+
+        
+    
+    
+            marker_c801744fb0b12bbeee0e1e7d9a19b84b.bindTooltip(
+                `<div>
+                     Click For Airport Details
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7fca83057f667818e7759ed7128f4827 = L.marker(
+                [34.061, -118.309],
+                {}
+            ).addTo(map_fb90b6aa530c231dc29a9235da31ec36);
+        
+    
+        var custom_icon_b42bbadd60021c121f8eea1ee347d135 = L.icon({"iconSize": [5, 5], "iconUrl": "data:image/png;base64,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"});
+        marker_7fca83057f667818e7759ed7128f4827.setIcon(custom_icon_b42bbadd60021c121f8eea1ee347d135);
+        
+    
+        var popup_b9bfbac1dcf85a9e2e7b17f06cf32d91 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_32a6f4b4c2980eb5dd0b433a0447a30a = $(`<div id="html_32a6f4b4c2980eb5dd0b433a0447a30a" style="width: 100.0%; height: 100.0%;"><b>Wiltern Theatre and Pellissier Building</b></div>`)[0];
+                popup_b9bfbac1dcf85a9e2e7b17f06cf32d91.setContent(html_32a6f4b4c2980eb5dd0b433a0447a30a);
+            
+        
+
+        marker_7fca83057f667818e7759ed7128f4827.bindPopup(popup_b9bfbac1dcf85a9e2e7b17f06cf32d91)
+        ;
+
+        
+    
+    
+            marker_7fca83057f667818e7759ed7128f4827.bindTooltip(
+                `<div>
+                     Click for Attraction Details
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_daac333c71bf73376eac5813bd14ffb6 = L.marker(
+                [34.062, -118.309],
+                {}
+            ).addTo(map_fb90b6aa530c231dc29a9235da31ec36);
+        
+    
+        var custom_icon_351e98a31438f75b4564c14c293c6b5c = L.icon({"iconSize": [5, 5], "iconUrl": "data:image/png;base64,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"});
+        marker_daac333c71bf73376eac5813bd14ffb6.setIcon(custom_icon_351e98a31438f75b4564c14c293c6b5c);
+        
+    
+        var popup_0ce8d22cbb487139b2da2979e6b5d7f3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_924c7de7c0edf2bfca85eaf2db818a3d = $(`<div id="html_924c7de7c0edf2bfca85eaf2db818a3d" style="width: 100.0%; height: 100.0%;"><b>Wiltern</b></div>`)[0];
+                popup_0ce8d22cbb487139b2da2979e6b5d7f3.setContent(html_924c7de7c0edf2bfca85eaf2db818a3d);
+            
+        
+
+        marker_daac333c71bf73376eac5813bd14ffb6.bindPopup(popup_0ce8d22cbb487139b2da2979e6b5d7f3)
+        ;
+
+        
+    
+    
+            marker_daac333c71bf73376eac5813bd14ffb6.bindTooltip(
+                `<div>
+                     Click for Attraction Details
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d853f8ab5d19faec2175135ab2f23076 = L.marker(
+                [34.021, -118.254],
+                {}
+            ).addTo(map_fb90b6aa530c231dc29a9235da31ec36);
+        
+    
+        var custom_icon_26ca301a8a6d150840982133702871d6 = L.icon({"iconSize": [5, 5], "iconUrl": "data:image/png;base64,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"});
+        marker_d853f8ab5d19faec2175135ab2f23076.setIcon(custom_icon_26ca301a8a6d150840982133702871d6);
+        
+    
+        var popup_3a9616d2eb955a0be5aa6607ff00bf47 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3d33d2567bb40f9e6ee236d2a41acda6 = $(`<div id="html_3d33d2567bb40f9e6ee236d2a41acda6" style="width: 100.0%; height: 100.0%;"><b>Lincoln Theatre</b></div>`)[0];
+                popup_3a9616d2eb955a0be5aa6607ff00bf47.setContent(html_3d33d2567bb40f9e6ee236d2a41acda6);
+            
+        
+
+        marker_d853f8ab5d19faec2175135ab2f23076.bindPopup(popup_3a9616d2eb955a0be5aa6607ff00bf47)
+        ;
+
+        
+    
+    
+            marker_d853f8ab5d19faec2175135ab2f23076.bindTooltip(
+                `<div>
+                     Click for Attraction Details
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a1f6cf05ad35f422d4b68af28fd358ba = L.marker(
+                [34.043, -118.255],
+                {}
+            ).addTo(map_fb90b6aa530c231dc29a9235da31ec36);
+        
+    
+        var custom_icon_714e209a7958292de014fb561edf0278 = L.icon({"iconSize": [5, 5], "iconUrl": "data:image/png;base64,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"});
+        marker_a1f6cf05ad35f422d4b68af28fd358ba.setIcon(custom_icon_714e209a7958292de014fb561edf0278);
+        
+    
+        var popup_b0337bb4c2a301a9fdc00a6bf91492f2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b0e1be1c7059c9be4058c67af6b6ca85 = $(`<div id="html_b0e1be1c7059c9be4058c67af6b6ca85" style="width: 100.0%; height: 100.0%;"><b>Orpheum Theatre</b></div>`)[0];
+                popup_b0337bb4c2a301a9fdc00a6bf91492f2.setContent(html_b0e1be1c7059c9be4058c67af6b6ca85);
+            
+        
+
+        marker_a1f6cf05ad35f422d4b68af28fd358ba.bindPopup(popup_b0337bb4c2a301a9fdc00a6bf91492f2)
+        ;
+
+        
+    
+    
+            marker_a1f6cf05ad35f422d4b68af28fd358ba.bindTooltip(
+                `<div>
+                     Click for Attraction Details
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0c323f9c2e498e5781edbed2e7268f5a = L.marker(
+                [34.098, -118.324],
+                {}
+            ).addTo(map_fb90b6aa530c231dc29a9235da31ec36);
+        
+    
+        var custom_icon_67ab086f03449ce5112ab16bd9051d46 = L.icon({"iconSize": [5, 5], "iconUrl": "data:image/png;base64,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"});
+        marker_0c323f9c2e498e5781edbed2e7268f5a.setIcon(custom_icon_67ab086f03449ce5112ab16bd9051d46);
+        
+    
+        var popup_e68e744d03916b5075b9e8a125809bde = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_13fe947ec7794d4e9fe19bc635008744 = $(`<div id="html_13fe947ec7794d4e9fe19bc635008744" style="width: 100.0%; height: 100.0%;"><b>Nickelodeon on Sunset</b></div>`)[0];
+                popup_e68e744d03916b5075b9e8a125809bde.setContent(html_13fe947ec7794d4e9fe19bc635008744);
+            
+        
+
+        marker_0c323f9c2e498e5781edbed2e7268f5a.bindPopup(popup_e68e744d03916b5075b9e8a125809bde)
+        ;
+
+        
+    
+    
+            marker_0c323f9c2e498e5781edbed2e7268f5a.bindTooltip(
+                `<div>
+                     Click for Attraction Details
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d39f92426b0442968ae4b46aade9f35d = L.marker(
+                [34.098, -118.324],
+                {}
+            ).addTo(map_fb90b6aa530c231dc29a9235da31ec36);
+        
+    
+        var custom_icon_e76aa73b34301daaa9661df01b704592 = L.icon({"iconSize": [5, 5], "iconUrl": "data:image/png;base64,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"});
+        marker_d39f92426b0442968ae4b46aade9f35d.setIcon(custom_icon_e76aa73b34301daaa9661df01b704592);
+        
+    
+        var popup_d2b8d6bec13b1cda4fc7a6de0a5661f6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_57a848b198e6b2971489ecbc1e4f3980 = $(`<div id="html_57a848b198e6b2971489ecbc1e4f3980" style="width: 100.0%; height: 100.0%;"><b>Hollywood Palladium</b></div>`)[0];
+                popup_d2b8d6bec13b1cda4fc7a6de0a5661f6.setContent(html_57a848b198e6b2971489ecbc1e4f3980);
+            
+        
+
+        marker_d39f92426b0442968ae4b46aade9f35d.bindPopup(popup_d2b8d6bec13b1cda4fc7a6de0a5661f6)
+        ;
+
+        
+    
+    
+            marker_d39f92426b0442968ae4b46aade9f35d.bindTooltip(
+                `<div>
+                     Click for Attraction Details
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bec3249818441cca144035983987ffd0 = L.marker(
+                [34.102, -118.326],
+                {}
+            ).addTo(map_fb90b6aa530c231dc29a9235da31ec36);
+        
+    
+        var custom_icon_f84f51845c8a86c308f8bd07e532543f = L.icon({"iconSize": [5, 5], "iconUrl": "data:image/png;base64,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"});
+        marker_bec3249818441cca144035983987ffd0.setIcon(custom_icon_f84f51845c8a86c308f8bd07e532543f);
+        
+    
+        var popup_dc587f0d6facdb488f1a1df2ed88fe29 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_747eb80fecbcb974a7265b3e9af189f0 = $(`<div id="html_747eb80fecbcb974a7265b3e9af189f0" style="width: 100.0%; height: 100.0%;"><b>Pantages Theater</b></div>`)[0];
+                popup_dc587f0d6facdb488f1a1df2ed88fe29.setContent(html_747eb80fecbcb974a7265b3e9af189f0);
+            
+        
+
+        marker_bec3249818441cca144035983987ffd0.bindPopup(popup_dc587f0d6facdb488f1a1df2ed88fe29)
+        ;
+
+        
+    
+    
+            marker_bec3249818441cca144035983987ffd0.bindTooltip(
+                `<div>
+                     Click for Attraction Details
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_15dc29c1cdce00333de32dfff6d118e4 = L.marker(
+                [33.862, -118.401],
+                {}
+            ).addTo(map_fb90b6aa530c231dc29a9235da31ec36);
+        
+    
+        var custom_icon_1d93c5c30097c124bfeb4117b900ba35 = L.icon({"iconSize": [5, 5], "iconUrl": "data:image/png;base64,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"});
+        marker_15dc29c1cdce00333de32dfff6d118e4.setIcon(custom_icon_1d93c5c30097c124bfeb4117b900ba35);
+        
+    
+        var popup_cf8ce585e715591e8e08f1a8161d4f28 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c10076c5eecce27bce7d991d79d4d843 = $(`<div id="html_c10076c5eecce27bce7d991d79d4d843" style="width: 100.0%; height: 100.0%;"><b>lighthouse cafe</b></div>`)[0];
+                popup_cf8ce585e715591e8e08f1a8161d4f28.setContent(html_c10076c5eecce27bce7d991d79d4d843);
+            
+        
+
+        marker_15dc29c1cdce00333de32dfff6d118e4.bindPopup(popup_cf8ce585e715591e8e08f1a8161d4f28)
+        ;
+
+        
+    
+    
+            marker_15dc29c1cdce00333de32dfff6d118e4.bindTooltip(
+                `<div>
+                     Click for Attraction Details
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e3386c3da49c2e6e7fd506510071b6f8 = L.marker(
+                [34.063, -118.349],
+                {}
+            ).addTo(map_fb90b6aa530c231dc29a9235da31ec36);
+        
+    
+        var custom_icon_3beead6200a588b2ee9caceda45eccd9 = L.icon({"iconSize": [5, 5], "iconUrl": "data:image/png;base64,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"});
+        marker_e3386c3da49c2e6e7fd506510071b6f8.setIcon(custom_icon_3beead6200a588b2ee9caceda45eccd9);
+        
+    
+        var popup_778d333dba8959481cfea21eb4f97122 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_64ed436d14ff41d06b24218c731f4e5a = $(`<div id="html_64ed436d14ff41d06b24218c731f4e5a" style="width: 100.0%; height: 100.0%;"><b>El Rey Theatre</b></div>`)[0];
+                popup_778d333dba8959481cfea21eb4f97122.setContent(html_64ed436d14ff41d06b24218c731f4e5a);
+            
+        
+
+        marker_e3386c3da49c2e6e7fd506510071b6f8.bindPopup(popup_778d333dba8959481cfea21eb4f97122)
+        ;
+
+        
+    
+    
+            marker_e3386c3da49c2e6e7fd506510071b6f8.bindTooltip(
+                `<div>
+                     Click for Attraction Details
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_84ee950907fd988a3c29526831c794a5 = L.marker(
+                [34.082, -118.389],
+                {}
+            ).addTo(map_fb90b6aa530c231dc29a9235da31ec36);
+        
+    
+        var custom_icon_ec78a49d43f944d7145f183a41f702d7 = L.icon({"iconSize": [5, 5], "iconUrl": "data:image/png;base64,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"});
+        marker_84ee950907fd988a3c29526831c794a5.setIcon(custom_icon_ec78a49d43f944d7145f183a41f702d7);
+        
+    
+        var popup_3b434145e720507d2ac6f65d65466c5d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c007663ddf9ae387cdde5e3f2820bb3f = $(`<div id="html_c007663ddf9ae387cdde5e3f2820bb3f" style="width: 100.0%; height: 100.0%;"><b>Troubadour</b></div>`)[0];
+                popup_3b434145e720507d2ac6f65d65466c5d.setContent(html_c007663ddf9ae387cdde5e3f2820bb3f);
+            
+        
+
+        marker_84ee950907fd988a3c29526831c794a5.bindPopup(popup_3b434145e720507d2ac6f65d65466c5d)
+        ;
+
+        
+    
+    
+            marker_84ee950907fd988a3c29526831c794a5.bindTooltip(
+                `<div>
+                     Click for Attraction Details
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7b9c9cad7ae30946291c7622bc8ae59b = L.marker(
+                [33.942, -118.408],
+                {}
+            ).addTo(map_fb90b6aa530c231dc29a9235da31ec36);
+        
+    
+        var custom_icon_0abe450f38d600d8c76d811fce746984 = L.icon({"iconSize": [20, 20], "iconUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARTSURBVHhe7d1rqGVjHMfx4/ZGiiIyiJCXQpQZmRG55ZbygqIolME0TSlSYya3FxK55BIyLgkhcs397oV4QSIvNBHKvYhc4vvLmprO/M8+az1rndnP86zftz7t6TSts561ztlnrbWftfeMc84555xzzjnnXFbtgbPwIH7Av3gV+rrbDG2H43E13od2QOQJuAXqEFyCJ/Eroh0w209wC9AaRBt8Pu/CDdz+iDZ2G5fDDdxdiDZ2GwfADdhhiDZ0G19hKm3ZPNbYBc1jSk83j26gjkL0k9/WSXAD9hiiDd3WNnADdSKijdzWsxiy3XEG7sP30PcY1ZWAZzB7I3exHH07FlfhDUTfQ0ZxJeA0RIPvYh/0qcuJaPW9jGjgbX2EPp2NaLlzqbozEQ26i2vRp+cQLXcuVfcOokF3cQRSW4JomZNU23mIBtzFz+jTjYiWO0m1fYBowF3oBao+fYNouZNU2YWIBtuVXjVM7VxEy5xPlX2CaLBd7YzUXkO0zPlU1ypEA+1KJ3Cp7YlomW1sUulXey9uHvv2fPOY0ormcfRdiuinLsXBSO0XRMtso6pSjmoiXyC14xAts61qWo1ogCluQ5cOx2XQi1g6d4mW2VYVbY2+G2Jjp2JSmihxER7Cl4iWkaqKNMEtGlyKv7EtNk5HTTonuRNDHVLPpfi08f5ANLgUetrZHnrJ9jq8h+j/LZTi00aLBpbqBfw+62ubU9HtgGhQpboJm1TSieHa5rGW9NpJse2C6KesVNeg6G5HNLASPYCi03SZaGAlugVFtxvuQTS40lyJ4tKR1AnQc+zr0IlbNLjS6GWCItKUTU0s0L0YmjHY58pprs5B1un2spV4FF8jGkQNfsN818mm0n7QrJB78Tmila+N7i85Etl0EPQ0pEnF0QrXTLMfNf4s2gvX409EK1u7N7E3skhHEt8iWtExeAo7Yuotha6aRis5FvdjK0w9/Z2IVnBMbkYWPY5oBcckm7PvuxGt4FhoYp3eLyWLhphpXiKdxK5DVid7JyNa2Rr9hVegW9R0m3WWd+a+hGjla6GTultxOhYh61Kn3OdM5026pqY5wsW9t8kjiAZVkn+gWwd0dHQ0smuL5rFNmrWnm+BLS5PddElDR0Yv4jtkW5cdooHs9P8/s07vlqCNv2EHaIdU2VuIngZyoN8AvXPCMoym8xFtjGn4FHdA79ygqaCjTVc0ow200PT2rbpUo/fA2heuaVd8iGijDU1PQ7oPZDHchDQz5AZEG7GPz6B5S6dg9i0CrkW6uKYJw6mvk/+Ih6ETTt2T4ajLYe+kjsGBOBSa1qPfog1p9oUOmUV/jN9ufAznnHPOOeecc865jNOlE13q0As7mu7ippfun1mnCcJXQHc0uemmWS/r9RuiK68uk2r+hJ0i8w7JLO+QzPIOySzvkMzSYa/unPWHKObRWu0QvZ3FevT57AzXP50Y6sOTnXPOOeecc845l0kzM/8Ba+BSoxvp+BsAAAAASUVORK5CYII="});
+        marker_7b9c9cad7ae30946291c7622bc8ae59b.setIcon(custom_icon_0abe450f38d600d8c76d811fce746984);
+        
+    
+        var popup_c7086e83c9030428f55add64cf8e938b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_636f99359c74c67afb931ac8402860fd = $(`<div id="html_636f99359c74c67afb931ac8402860fd" style="width: 100.0%; height: 100.0%;"><b>LOS ANGELES</b><BR>LOS ANGELES INTERNATIONAL</div>`)[0];
+                popup_c7086e83c9030428f55add64cf8e938b.setContent(html_636f99359c74c67afb931ac8402860fd);
+            
+        
+
+        marker_7b9c9cad7ae30946291c7622bc8ae59b.bindPopup(popup_c7086e83c9030428f55add64cf8e938b)
+        ;
+
+        
+    
+    
+            marker_7b9c9cad7ae30946291c7622bc8ae59b.bindTooltip(
+                `<div>
+                     Click For Airport Details
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7d7e5a009e574cf2bcfab0086224ee79 = L.polyline(
+                [[29.98, -95.34], [33.942, -118.408]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": "3", "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_fb90b6aa530c231dc29a9235da31ec36);
+        
+    
+            var marker_eee9f730d5e89ff2cef1fe8cb9a444d2 = L.marker(
+                [33.942, -118.408],
+                {}
+            ).addTo(map_fb90b6aa530c231dc29a9235da31ec36);
+        
+    
+        var custom_icon_d30696aaa4a3bfb9198ab9a2c8af7431 = L.icon({"iconSize": [20, 20], "iconUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARTSURBVHhe7d1rqGVjHMfx4/ZGiiIyiJCXQpQZmRG55ZbygqIolME0TSlSYya3FxK55BIyLgkhcs397oV4QSIvNBHKvYhc4vvLmprO/M8+az1rndnP86zftz7t6TSts561ztlnrbWftfeMc84555xzzjnnXFbtgbPwIH7Av3gV+rrbDG2H43E13od2QOQJuAXqEFyCJ/Eroh0w209wC9AaRBt8Pu/CDdz+iDZ2G5fDDdxdiDZ2GwfADdhhiDZ0G19hKm3ZPNbYBc1jSk83j26gjkL0k9/WSXAD9hiiDd3WNnADdSKijdzWsxiy3XEG7sP30PcY1ZWAZzB7I3exHH07FlfhDUTfQ0ZxJeA0RIPvYh/0qcuJaPW9jGjgbX2EPp2NaLlzqbozEQ26i2vRp+cQLXcuVfcOokF3cQRSW4JomZNU23mIBtzFz+jTjYiWO0m1fYBowF3oBao+fYNouZNU2YWIBtuVXjVM7VxEy5xPlX2CaLBd7YzUXkO0zPlU1ypEA+1KJ3Cp7YlomW1sUulXey9uHvv2fPOY0ormcfRdiuinLsXBSO0XRMtso6pSjmoiXyC14xAts61qWo1ogCluQ5cOx2XQi1g6d4mW2VYVbY2+G2Jjp2JSmihxER7Cl4iWkaqKNMEtGlyKv7EtNk5HTTonuRNDHVLPpfi08f5ANLgUetrZHnrJ9jq8h+j/LZTi00aLBpbqBfw+62ubU9HtgGhQpboJm1TSieHa5rGW9NpJse2C6KesVNeg6G5HNLASPYCi03SZaGAlugVFtxvuQTS40lyJ4tKR1AnQc+zr0IlbNLjS6GWCItKUTU0s0L0YmjHY58pprs5B1un2spV4FF8jGkQNfsN818mm0n7QrJB78Tmila+N7i85Etl0EPQ0pEnF0QrXTLMfNf4s2gvX409EK1u7N7E3skhHEt8iWtExeAo7Yuotha6aRis5FvdjK0w9/Z2IVnBMbkYWPY5oBcckm7PvuxGt4FhoYp3eLyWLhphpXiKdxK5DVid7JyNa2Rr9hVegW9R0m3WWd+a+hGjla6GTultxOhYh61Kn3OdM5026pqY5wsW9t8kjiAZVkn+gWwd0dHQ0smuL5rFNmrWnm+BLS5PddElDR0Yv4jtkW5cdooHs9P8/s07vlqCNv2EHaIdU2VuIngZyoN8AvXPCMoym8xFtjGn4FHdA79ygqaCjTVc0ow200PT2rbpUo/fA2heuaVd8iGijDU1PQ7oPZDHchDQz5AZEG7GPz6B5S6dg9i0CrkW6uKYJw6mvk/+Ih6ETTt2T4ajLYe+kjsGBOBSa1qPfog1p9oUOmUV/jN9ufAznnHPOOeecc865jNOlE13q0As7mu7ippfun1mnCcJXQHc0uemmWS/r9RuiK68uk2r+hJ0i8w7JLO+QzPIOySzvkMzSYa/unPWHKObRWu0QvZ3FevT57AzXP50Y6sOTnXPOOeecc845l0kzM/8Ba+BSoxvp+BsAAAAASUVORK5CYII="});
+        marker_eee9f730d5e89ff2cef1fe8cb9a444d2.setIcon(custom_icon_d30696aaa4a3bfb9198ab9a2c8af7431);
+        
+    
+        var popup_5b56057a2a196e9888aa128a965dde16 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e41ff16606ab26b44d78abf5d31427c6 = $(`<div id="html_e41ff16606ab26b44d78abf5d31427c6" style="width: 100.0%; height: 100.0%;"><b>LOS ANGELES</b><BR>LOS ANGELES INTERNATIONAL</div>`)[0];
+                popup_5b56057a2a196e9888aa128a965dde16.setContent(html_e41ff16606ab26b44d78abf5d31427c6);
+            
+        
+
+        marker_eee9f730d5e89ff2cef1fe8cb9a444d2.bindPopup(popup_5b56057a2a196e9888aa128a965dde16)
+        ;
+
+        
+    
+    
+            marker_eee9f730d5e89ff2cef1fe8cb9a444d2.bindTooltip(
+                `<div>
+                     Click For Airport Details
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ca71a4d5233d5a774f3604d25b46acf6 = L.polyline(
+                [[29.98, -95.34], [33.942, -118.408]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": "3", "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_fb90b6aa530c231dc29a9235da31ec36);
+        
+    
+            var marker_96333b7953cd1c0669cdabfaeb62e10e = L.marker(
+                [33.942, -118.408],
+                {}
+            ).addTo(map_fb90b6aa530c231dc29a9235da31ec36);
+        
+    
+        var custom_icon_da847a2156edf99d1301d91f373acfcb = L.icon({"iconSize": [20, 20], "iconUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARTSURBVHhe7d1rqGVjHMfx4/ZGiiIyiJCXQpQZmRG55ZbygqIolME0TSlSYya3FxK55BIyLgkhcs397oV4QSIvNBHKvYhc4vvLmprO/M8+az1rndnP86zftz7t6TSts561ztlnrbWftfeMc84555xzzjnnXFbtgbPwIH7Av3gV+rrbDG2H43E13od2QOQJuAXqEFyCJ/Eroh0w209wC9AaRBt8Pu/CDdz+iDZ2G5fDDdxdiDZ2GwfADdhhiDZ0G19hKm3ZPNbYBc1jSk83j26gjkL0k9/WSXAD9hiiDd3WNnADdSKijdzWsxiy3XEG7sP30PcY1ZWAZzB7I3exHH07FlfhDUTfQ0ZxJeA0RIPvYh/0qcuJaPW9jGjgbX2EPp2NaLlzqbozEQ26i2vRp+cQLXcuVfcOokF3cQRSW4JomZNU23mIBtzFz+jTjYiWO0m1fYBowF3oBao+fYNouZNU2YWIBtuVXjVM7VxEy5xPlX2CaLBd7YzUXkO0zPlU1ypEA+1KJ3Cp7YlomW1sUulXey9uHvv2fPOY0ormcfRdiuinLsXBSO0XRMtso6pSjmoiXyC14xAts61qWo1ogCluQ5cOx2XQi1g6d4mW2VYVbY2+G2Jjp2JSmihxER7Cl4iWkaqKNMEtGlyKv7EtNk5HTTonuRNDHVLPpfi08f5ANLgUetrZHnrJ9jq8h+j/LZTi00aLBpbqBfw+62ubU9HtgGhQpboJm1TSieHa5rGW9NpJse2C6KesVNeg6G5HNLASPYCi03SZaGAlugVFtxvuQTS40lyJ4tKR1AnQc+zr0IlbNLjS6GWCItKUTU0s0L0YmjHY58pprs5B1un2spV4FF8jGkQNfsN818mm0n7QrJB78Tmila+N7i85Etl0EPQ0pEnF0QrXTLMfNf4s2gvX409EK1u7N7E3skhHEt8iWtExeAo7Yuotha6aRis5FvdjK0w9/Z2IVnBMbkYWPY5oBcckm7PvuxGt4FhoYp3eLyWLhphpXiKdxK5DVid7JyNa2Rr9hVegW9R0m3WWd+a+hGjla6GTultxOhYh61Kn3OdM5026pqY5wsW9t8kjiAZVkn+gWwd0dHQ0smuL5rFNmrWnm+BLS5PddElDR0Yv4jtkW5cdooHs9P8/s07vlqCNv2EHaIdU2VuIngZyoN8AvXPCMoym8xFtjGn4FHdA79ygqaCjTVc0ow200PT2rbpUo/fA2heuaVd8iGijDU1PQ7oPZDHchDQz5AZEG7GPz6B5S6dg9i0CrkW6uKYJw6mvk/+Ih6ETTt2T4ajLYe+kjsGBOBSa1qPfog1p9oUOmUV/jN9ufAznnHPOOeecc865jNOlE13q0As7mu7ippfun1mnCcJXQHc0uemmWS/r9RuiK68uk2r+hJ0i8w7JLO+QzPIOySzvkMzSYa/unPWHKObRWu0QvZ3FevT57AzXP50Y6sOTnXPOOeecc845l0kzM/8Ba+BSoxvp+BsAAAAASUVORK5CYII="});
+        marker_96333b7953cd1c0669cdabfaeb62e10e.setIcon(custom_icon_da847a2156edf99d1301d91f373acfcb);
+        
+    
+        var popup_71fb010c10ae81a164ab4aaf4393e7a7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fe2a5c59efa432948edc93a6ddc2c49b = $(`<div id="html_fe2a5c59efa432948edc93a6ddc2c49b" style="width: 100.0%; height: 100.0%;"><b>LOS ANGELES</b><BR>LOS ANGELES INTERNATIONAL</div>`)[0];
+                popup_71fb010c10ae81a164ab4aaf4393e7a7.setContent(html_fe2a5c59efa432948edc93a6ddc2c49b);
+            
+        
+
+        marker_96333b7953cd1c0669cdabfaeb62e10e.bindPopup(popup_71fb010c10ae81a164ab4aaf4393e7a7)
+        ;
+
+        
+    
+    
+            marker_96333b7953cd1c0669cdabfaeb62e10e.bindTooltip(
+                `<div>
+                     Click For Airport Details
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_873adc1cc566816ae5038b33849556f8 = L.polyline(
+                [[29.98, -95.34], [33.942, -118.408]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": "3", "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_fb90b6aa530c231dc29a9235da31ec36);
+        
+    
+            var marker_83f96f8b5bc17f9812546c78a9624926 = L.marker(
+                [33.942, -118.408],
+                {}
+            ).addTo(map_fb90b6aa530c231dc29a9235da31ec36);
+        
+    
+        var custom_icon_747297c76a70613d58571dfc15b79b6f = L.icon({"iconSize": [20, 20], "iconUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARTSURBVHhe7d1rqGVjHMfx4/ZGiiIyiJCXQpQZmRG55ZbygqIolME0TSlSYya3FxK55BIyLgkhcs397oV4QSIvNBHKvYhc4vvLmprO/M8+az1rndnP86zftz7t6TSts561ztlnrbWftfeMc84555xzzjnnXFbtgbPwIH7Av3gV+rrbDG2H43E13od2QOQJuAXqEFyCJ/Eroh0w209wC9AaRBt8Pu/CDdz+iDZ2G5fDDdxdiDZ2GwfADdhhiDZ0G19hKm3ZPNbYBc1jSk83j26gjkL0k9/WSXAD9hiiDd3WNnADdSKijdzWsxiy3XEG7sP30PcY1ZWAZzB7I3exHH07FlfhDUTfQ0ZxJeA0RIPvYh/0qcuJaPW9jGjgbX2EPp2NaLlzqbozEQ26i2vRp+cQLXcuVfcOokF3cQRSW4JomZNU23mIBtzFz+jTjYiWO0m1fYBowF3oBao+fYNouZNU2YWIBtuVXjVM7VxEy5xPlX2CaLBd7YzUXkO0zPlU1ypEA+1KJ3Cp7YlomW1sUulXey9uHvv2fPOY0ormcfRdiuinLsXBSO0XRMtso6pSjmoiXyC14xAts61qWo1ogCluQ5cOx2XQi1g6d4mW2VYVbY2+G2Jjp2JSmihxER7Cl4iWkaqKNMEtGlyKv7EtNk5HTTonuRNDHVLPpfi08f5ANLgUetrZHnrJ9jq8h+j/LZTi00aLBpbqBfw+62ubU9HtgGhQpboJm1TSieHa5rGW9NpJse2C6KesVNeg6G5HNLASPYCi03SZaGAlugVFtxvuQTS40lyJ4tKR1AnQc+zr0IlbNLjS6GWCItKUTU0s0L0YmjHY58pprs5B1un2spV4FF8jGkQNfsN818mm0n7QrJB78Tmila+N7i85Etl0EPQ0pEnF0QrXTLMfNf4s2gvX409EK1u7N7E3skhHEt8iWtExeAo7Yuotha6aRis5FvdjK0w9/Z2IVnBMbkYWPY5oBcckm7PvuxGt4FhoYp3eLyWLhphpXiKdxK5DVid7JyNa2Rr9hVegW9R0m3WWd+a+hGjla6GTultxOhYh61Kn3OdM5026pqY5wsW9t8kjiAZVkn+gWwd0dHQ0smuL5rFNmrWnm+BLS5PddElDR0Yv4jtkW5cdooHs9P8/s07vlqCNv2EHaIdU2VuIngZyoN8AvXPCMoym8xFtjGn4FHdA79ygqaCjTVc0ow200PT2rbpUo/fA2heuaVd8iGijDU1PQ7oPZDHchDQz5AZEG7GPz6B5S6dg9i0CrkW6uKYJw6mvk/+Ih6ETTt2T4ajLYe+kjsGBOBSa1qPfog1p9oUOmUV/jN9ufAznnHPOOeecc865jNOlE13q0As7mu7ippfun1mnCcJXQHc0uemmWS/r9RuiK68uk2r+hJ0i8w7JLO+QzPIOySzvkMzSYa/unPWHKObRWu0QvZ3FevT57AzXP50Y6sOTnXPOOeecc845l0kzM/8Ba+BSoxvp+BsAAAAASUVORK5CYII="});
+        marker_83f96f8b5bc17f9812546c78a9624926.setIcon(custom_icon_747297c76a70613d58571dfc15b79b6f);
+        
+    
+        var popup_aaff210628e045ba3d88e2c26e887fbd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9803af078bd4ec8edbde085f268649b2 = $(`<div id="html_9803af078bd4ec8edbde085f268649b2" style="width: 100.0%; height: 100.0%;"><b>LOS ANGELES</b><BR>LOS ANGELES INTERNATIONAL</div>`)[0];
+                popup_aaff210628e045ba3d88e2c26e887fbd.setContent(html_9803af078bd4ec8edbde085f268649b2);
+            
+        
+
+        marker_83f96f8b5bc17f9812546c78a9624926.bindPopup(popup_aaff210628e045ba3d88e2c26e887fbd)
+        ;
+
+        
+    
+    
+            marker_83f96f8b5bc17f9812546c78a9624926.bindTooltip(
+                `<div>
+                     Click For Airport Details
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_796047835cae47e642aed937fbabc446 = L.polyline(
+                [[29.98, -95.34], [33.942, -118.408]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": "3", "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_fb90b6aa530c231dc29a9235da31ec36);
+        
+    
+            var marker_e2e03dc5a4df28b4e0c5aad714e59fa6 = L.marker(
+                [33.942, -118.408],
+                {}
+            ).addTo(map_fb90b6aa530c231dc29a9235da31ec36);
+        
+    
+        var custom_icon_b0c7b78d712d5d127f8271f34e02b5a9 = L.icon({"iconSize": [20, 20], "iconUrl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARTSURBVHhe7d1rqGVjHMfx4/ZGiiIyiJCXQpQZmRG55ZbygqIolME0TSlSYya3FxK55BIyLgkhcs397oV4QSIvNBHKvYhc4vvLmprO/M8+az1rndnP86zftz7t6TSts561ztlnrbWftfeMc84555xzzjnnXFbtgbPwIH7Av3gV+rrbDG2H43E13od2QOQJuAXqEFyCJ/Eroh0w209wC9AaRBt8Pu/CDdz+iDZ2G5fDDdxdiDZ2GwfADdhhiDZ0G19hKm3ZPNbYBc1jSk83j26gjkL0k9/WSXAD9hiiDd3WNnADdSKijdzWsxiy3XEG7sP30PcY1ZWAZzB7I3exHH07FlfhDUTfQ0ZxJeA0RIPvYh/0qcuJaPW9jGjgbX2EPp2NaLlzqbozEQ26i2vRp+cQLXcuVfcOokF3cQRSW4JomZNU23mIBtzFz+jTjYiWO0m1fYBowF3oBao+fYNouZNU2YWIBtuVXjVM7VxEy5xPlX2CaLBd7YzUXkO0zPlU1ypEA+1KJ3Cp7YlomW1sUulXey9uHvv2fPOY0ormcfRdiuinLsXBSO0XRMtso6pSjmoiXyC14xAts61qWo1ogCluQ5cOx2XQi1g6d4mW2VYVbY2+G2Jjp2JSmihxER7Cl4iWkaqKNMEtGlyKv7EtNk5HTTonuRNDHVLPpfi08f5ANLgUetrZHnrJ9jq8h+j/LZTi00aLBpbqBfw+62ubU9HtgGhQpboJm1TSieHa5rGW9NpJse2C6KesVNeg6G5HNLASPYCi03SZaGAlugVFtxvuQTS40lyJ4tKR1AnQc+zr0IlbNLjS6GWCItKUTU0s0L0YmjHY58pprs5B1un2spV4FF8jGkQNfsN818mm0n7QrJB78Tmila+N7i85Etl0EPQ0pEnF0QrXTLMfNf4s2gvX409EK1u7N7E3skhHEt8iWtExeAo7Yuotha6aRis5FvdjK0w9/Z2IVnBMbkYWPY5oBcckm7PvuxGt4FhoYp3eLyWLhphpXiKdxK5DVid7JyNa2Rr9hVegW9R0m3WWd+a+hGjla6GTultxOhYh61Kn3OdM5026pqY5wsW9t8kjiAZVkn+gWwd0dHQ0smuL5rFNmrWnm+BLS5PddElDR0Yv4jtkW5cdooHs9P8/s07vlqCNv2EHaIdU2VuIngZyoN8AvXPCMoym8xFtjGn4FHdA79ygqaCjTVc0ow200PT2rbpUo/fA2heuaVd8iGijDU1PQ7oPZDHchDQz5AZEG7GPz6B5S6dg9i0CrkW6uKYJw6mvk/+Ih6ETTt2T4ajLYe+kjsGBOBSa1qPfog1p9oUOmUV/jN9ufAznnHPOOeecc865jNOlE13q0As7mu7ippfun1mnCcJXQHc0uemmWS/r9RuiK68uk2r+hJ0i8w7JLO+QzPIOySzvkMzSYa/unPWHKObRWu0QvZ3FevT57AzXP50Y6sOTnXPOOeecc845l0kzM/8Ba+BSoxvp+BsAAAAASUVORK5CYII="});
+        marker_e2e03dc5a4df28b4e0c5aad714e59fa6.setIcon(custom_icon_b0c7b78d712d5d127f8271f34e02b5a9);
+        
+    
+        var popup_0613652e0b79b2a27387a66e6aae6e59 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_70b90c689d615b38230a13c6b79f380b = $(`<div id="html_70b90c689d615b38230a13c6b79f380b" style="width: 100.0%; height: 100.0%;"><b>LOS ANGELES</b><BR>LOS ANGELES INTERNATIONAL</div>`)[0];
+                popup_0613652e0b79b2a27387a66e6aae6e59.setContent(html_70b90c689d615b38230a13c6b79f380b);
+            
+        
+
+        marker_e2e03dc5a4df28b4e0c5aad714e59fa6.bindPopup(popup_0613652e0b79b2a27387a66e6aae6e59)
+        ;
+
+        
+    
+    
+            marker_e2e03dc5a4df28b4e0c5aad714e59fa6.bindTooltip(
+                `<div>
+                     Click For Airport Details
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ce5584e8602ec524135902e56bb7fc56 = L.polyline(
+                [[29.98, -95.34], [33.942, -118.408]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": "3", "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_fb90b6aa530c231dc29a9235da31ec36);
+        
+</script>
+</html>
